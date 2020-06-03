@@ -145,9 +145,7 @@ namespace PipsiProject.Controllers
                         //}
 
                     // zapisanie rekordów
-
-
-
+                                        
                     _context.Update(carModel);      // ***********
                     await _context.SaveChangesAsync();
                 }

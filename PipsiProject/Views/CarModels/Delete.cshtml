@@ -1,0 +1,118 @@
+﻿@model PipsiProject.Models.CarModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Usuwanie samochodu z bazy</h2>
+
+<h3 class="alert-danger" style="padding:4%">Czy jesteś pewien, że chcesz usunąć tą pozycję?</h3>
+<div>
+    
+    <hr />
+    <div class="row col-lg-12 ">
+        <div class="col-lg-4 text-left">
+            <dl class="">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Id)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Id)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Marka)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Marka)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Model)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Model)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Klasa)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Klasa)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.PojSilnika)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.PojSilnika)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Przebieg)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Przebieg)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.RokProd)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.RokProd)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Paliwo)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Paliwo)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Kolor)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Kolor)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Cena)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Cena)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Opis)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Opis)
+                </dd>
+            </dl>
+        </div>
+        <div class="col-lg-6">
+            <p>
+                <img class="img-rounded img-responsive" src="@("~/images/carimg/"+ Model.ImageName)" asp-append-version="true" width="450px" height="350px" />
+            </p>
+            
+            <p>
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ImageTitle)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.ImageTitle)
+                    </dd>
+                    <dt>
+                        Plik
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.ImageName)
+                    </dd>
+                </dl>
+            </p>
+
+        </div>
+        <div class="col-lg-2 ">
+
+            <form class="btn-group-vertical" asp-action="Delete">
+                <input type="hidden" asp-for="Id" />
+                <input type="submit" value="Usuń auto" class="btn btn-danger" />
+                <br />
+                <a class="btn btn-default" asp-action="Index">Powrót</a>
+            </form>
+
+        </div>
+    </div>
+</div>

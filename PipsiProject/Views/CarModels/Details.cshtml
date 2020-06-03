@@ -1,0 +1,113 @@
+﻿@model PipsiProject.Models.CarModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+<div>
+    
+    <hr />
+    <div class="row col-lg-12 ">
+        <div class="jumbotron col-lg-12" style="background-color:#e2e2e2; box-shadow: rgba(0,0,0,0.4) 4px 4px 4px; ">
+            <div class="col-lg-11">
+                <h2>
+
+                    <span>@Html.DisplayFor(model => model.Marka) @Html.DisplayFor(model => model.Model)</span>
+
+
+                </h2>
+                <img class="img-rounded img-responsive" src="@("~/images/carimg/"+ Model.ImageName)" asp-append-version="true" style="width=auto; height=auto;" />
+            </div>
+            <div class="col-lg-1" style="vertical-align:middle">
+                <ul class="media-list btn-group-vertical">
+                    <li><a class="btn  btn-block " style="margin:10px 0px; background-color:#3e3e3e; color:white " asp-action="Edit" asp-route-id="@Model.Id">Edytuj</a></li>
+                    <li><a class="btn  btn-block " style="margin:10px 0px; background-color:#3e3e3e; color:white " asp-action="Details" asp-route-id="@Model.Id">Szczegóły</a></li>
+                    <li><a class="btn  btn-block " style="margin:10px 0px; background-color:orange; color:white " asp-action="Delete" asp-route-id="@Model.Id">Usuń</a></li>
+                    <li><br /></li>
+                    <li><a class="btn  btn-block"  style="margin:10px 0px; background-color:#3e3e3e; color:white " asp-action="Index">Powrót</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-12" style="background-color:white; margin:1%; padding:2%">
+
+                <h4>
+                    <span class="glyphicon glyphicon-book"></span>
+                    @Html.DisplayNameFor(model => model.Opis)
+                </h4>
+                <hr />
+                <dl>
+                    <dt>
+
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Opis)
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-lg-6 text-left" style="background-color:white; margin:1%; padding:2%">
+                <h4>
+                    <span class="glyphicon glyphicon-wrench"></span>
+                    <span>Parametry:</span>
+
+                </h4>
+                <hr />
+                <dl class="">
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Klasa)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Klasa)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.PojSilnika)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.PojSilnika)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Przebieg)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Przebieg)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.RokProd)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.RokProd)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Paliwo)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Paliwo)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Kolor)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Kolor)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Cena)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Cena)
+                    </dd>
+
+                </dl>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+

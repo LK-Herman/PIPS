@@ -1,0 +1,104 @@
+﻿@model IEnumerable<PipsiProject.Models.CarModel>
+
+@{
+    ViewData["Title"] = "Samochody";
+}
+
+<h1 class="page-header">Flota samochodów</h1>
+<br />
+
+
+<div class="row">
+
+    <div class="col-lg-3">
+
+    </div><!-- /.col-lg-6 -->
+
+
+
+</div><!-- /.row -->
+
+<nav class="navbar container-fluid" padding:0;">
+
+    <a class="btn navbar-btn  navbar-right" style="background-color:white; color:#232323; border: 1px solid #a9a9a9" asp-action="Create">
+        <span class="glyphicon glyphicon-plus"></span> 
+        <span> Dodaj samochód</span>
+    </a>
+
+    <select class="navbar-left form-control  navbar-form form-group" style="background-color:white; border: 1px solid lightgrey">
+        <option>Ekonomiczna</option>
+        <option>Sportowa</option>
+        <option>Luksusowa</option>
+    </select>
+
+    <select class="form-control navbar-form navbar-left" id="Kolor" style="background-color:white; border: 1px solid lightgrey">
+        <option>Biały</option>
+        <option>Czerwony</option>
+        <option>Biebieski</option>
+    </select>
+    
+
+    <form class="navbar-form navbar-left form-group" role="search">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Szukaj...">
+        </div>
+        <button type="submit" class="btn btn-default">Szukaj</button>
+    </form>
+
+</nav>
+
+<br />
+
+<table class="table table-responsive table-striped">
+    <thead>
+
+        
+
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+            var newDate = item.RokProd.ToShortDateString();
+            <tr class="row col-lg-12" style="vertical-align: middle; text-align: left">
+
+                <td class="col-lg-4" style="vertical-align: middle">
+                    <a asp-action="Details" asp-route-id="@item.Id">
+                        <img class="img-rounded img-responsive" src="@("~/images/carimg/"+ item.ImageName)" asp-append-version="true" width="350" height="250" />
+                    </a>
+                </td>
+                
+                <td class="col-lg-3" style="vertical-align: middle">
+                    <p>
+                        <h3 class="text-capitalize" style="color:#01791d;">@Html.DisplayFor(modelItem => item.Marka) @Html.DisplayFor(modelItem => item.Model)</h3>
+                    <p> <label>@Html.DisplayNameFor(modelItem => item.Klasa)</label>:  @Html.DisplayFor(modelItem => item.Klasa) </p>
+                    <p> <label>@Html.DisplayNameFor(modelItem => item.PojSilnika) </label>:  @Html.DisplayFor(modelItem => item.PojSilnika) </p>
+                    <p> <label>@Html.DisplayNameFor(modelItem => item.Przebieg) </label>:  @Html.DisplayFor(modelItem => item.Przebieg) </p>
+                    <p> <label>@Html.DisplayNameFor(modelItem => item.RokProd)</label>:  @newDate</p>
+                </td>
+
+                <td class="col-lg-4" style="text-align:center; vertical-align: middle">
+                    <div class="img-rounded"  >
+                        <p style="font-size: 40px; color:orange; font-family:'Century Gothic'" >@Html.DisplayFor(modelItem => item.Cena) </p>
+                        <p style="color: dimgray; font-size:16px ">PLN za dzień</p>
+                        <p class="img-rounded" style="background-color:#f2f2f2; padding:1em 2em; font-size: 12px ">
+                            @Html.DisplayFor(modelItem => item.Opis)
+                        </p>
+                    </div>
+
+                </td>
+
+
+                <td class="col-lg-1" style="vertical-align:middle">
+                    <ul class="media-list btn-group-vertical">
+                        <li ><a class="btn  btn-block " style="margin:10px 0px; background-color:#3e3e3e; color:white " asp-action="Edit" asp-route-id="@item.Id">Edytuj</a></li>
+                        <li ><a class="btn  btn-block " style="margin:10px 0px; background-color:#3e3e3e; color:white " asp-action="Details" asp-route-id="@item.Id">Szczegóły</a></li>
+                        <li ><a class="btn  btn-block " style="margin:10px 0px; background-color:orange; color:white " asp-action="Delete" asp-route-id="@item.Id">Usuń</a></li>
+                    </ul>
+                </td>
+
+            </tr>
+
+        }
+    </tbody>
+</table>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1145
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PipsiProject", "PipsiProject\PipsiProject.csproj", "{BA39B2DF-8596-49EE-8EA4-D6EB3BB948D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA39B2DF-8596-49EE-8EA4-D6EB3BB948D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA39B2DF-8596-49EE-8EA4-D6EB3BB948D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA39B2DF-8596-49EE-8EA4-D6EB3BB948D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA39B2DF-8596-49EE-8EA4-D6EB3BB948D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB19A065-50E6-430D-AFC8-1A1653BB7884}
+	EndGlobalSection
+EndGlobal

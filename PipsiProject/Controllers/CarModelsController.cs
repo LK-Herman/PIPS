@@ -123,29 +123,20 @@ namespace PipsiProject.Controllers
             {
                 try
                 {
-                    // var carM = await _context.Cars.FindAsync(id);
-
-                    // string wwwRootPath = _hostEnvironment.WebRootPath;
-
-                    //var fName = _context.Cars
-                    //    .Where(b => b.Id == carModel.Id)
-                    //    .FirstOrDefault(); 
-
-                    
-                    // zapisywanie w katalogu ~/wwwroot/images/carimg
 
 
-                        //string fileName = Path.GetFileNameWithoutExtension(carModel.ImageFile.FileName);
-                        //string extension = Path.GetExtension(carModel.ImageFile.FileName);
-                        //carModel.ImageName = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
-                        //string path = Path.Combine(wwwRootPath + "/images/carimg/", fileName);
-                        //using (var fileStream = new FileStream(path, FileMode.Create))
-                        //{
-                        //    await carModel.ImageFile.CopyToAsync(fileStream);
-                        //}
+                    string wwwRootPath = _hostEnvironment.WebRootPath;
+                    string fileName = Path.GetFileNameWithoutExtension(carModel.ImageFile.FileName);
+                    string extension = Path.GetExtension(carModel.ImageFile.FileName);
+                    carModel.ImageName = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                    string path = Path.Combine(wwwRootPath + "/images/carimg/", fileName);
+                    using (var fileStream = new FileStream(path, FileMode.Create))
+                    {
+                        await carModel.ImageFile.CopyToAsync(fileStream);
+                    }
 
-                    // zapisanie rekordów
-                                        
+
+
                     _context.Update(carModel);      // ***********
                     await _context.SaveChangesAsync();
                 }

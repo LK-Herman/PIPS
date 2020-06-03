@@ -80,7 +80,7 @@ using PipsiProject.Models;
             WriteLiteral("\r\n<h1 class=\"page-header\">Flota samochodów</h1>\r\n<br />\r\n\r\n\r\n<div class=\"row\">\r\n\r\n    <div class=\"col-lg-3\">\r\n\r\n    </div><!-- /.col-lg-6 -->\r\n\r\n\r\n\r\n</div><!-- /.row -->\r\n\r\n<nav class=\"navbar container-fluid\" padding:0;\">\r\n\r\n    ");
             EndContext();
             BeginContext(326, 238, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59744ed5e2574ecf9df96d662a4006f1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b7b613c00aad4ba78b8bccaf0bb6d797", async() => {
                 BeginContext(459, 101, true);
                 WriteLiteral("\r\n        <span class=\"glyphicon glyphicon-plus\"></span> \r\n        <span> Dodaj samochód</span>\r\n    ");
                 EndContext();
@@ -104,7 +104,7 @@ using PipsiProject.Models;
             WriteLiteral("\r\n\r\n    <select class=\"navbar-left form-control  navbar-form form-group\" style=\"background-color:white; border: 1px solid lightgrey\">\r\n        ");
             EndContext();
             BeginContext(707, 28, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2bb8e8b75c0646109efa83b50479392a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b4f0a37c070246a5abcf30b9d348a8d5", async() => {
                 BeginContext(715, 11, true);
                 WriteLiteral("Ekonomiczna");
                 EndContext();
@@ -124,7 +124,7 @@ using PipsiProject.Models;
             WriteLiteral("\r\n        ");
             EndContext();
             BeginContext(745, 25, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "40de319e16c740c68ad2bc7101ce8f36", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d45947e3b18746599122d59a9fd9fcd6", async() => {
                 BeginContext(753, 8, true);
                 WriteLiteral("Sportowa");
                 EndContext();
@@ -144,7 +144,7 @@ using PipsiProject.Models;
             WriteLiteral("\r\n        ");
             EndContext();
             BeginContext(780, 26, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "15f701d1fe7f401d937c46d6f2a5a0de", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e4d4368aeaa24848b7a1d0e35c975cc1", async() => {
                 BeginContext(788, 9, true);
                 WriteLiteral("Luksusowa");
                 EndContext();
@@ -164,7 +164,7 @@ using PipsiProject.Models;
             WriteLiteral("\r\n    </select>\r\n\r\n    <select class=\"form-control navbar-form navbar-left\" id=\"Kolor\" style=\"background-color:white; border: 1px solid lightgrey\">\r\n        ");
             EndContext();
             BeginContext(963, 22, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "096aa64b53514fa5b0250837dc8e9db1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "683ef7d999404c8496e1922790621522", async() => {
                 BeginContext(971, 5, true);
                 WriteLiteral("Biały");
                 EndContext();
@@ -184,7 +184,7 @@ using PipsiProject.Models;
             WriteLiteral("\r\n        ");
             EndContext();
             BeginContext(995, 25, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e82d831ccb264b12a72929bb165d0534", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c62132463c54a528a624336427cb216", async() => {
                 BeginContext(1003, 8, true);
                 WriteLiteral("Czerwony");
                 EndContext();
@@ -204,7 +204,7 @@ using PipsiProject.Models;
             WriteLiteral("\r\n        ");
             EndContext();
             BeginContext(1030, 26, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d7b5bb891b2d4184b3e0d6b8c59ebb2e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0e533af1c4894dfd9c849ace380dfc7f", async() => {
                 BeginContext(1038, 9, true);
                 WriteLiteral("Biebieski");
                 EndContext();
@@ -224,7 +224,7 @@ using PipsiProject.Models;
             WriteLiteral("\r\n    </select>\r\n    \r\n\r\n    ");
             EndContext();
             BeginContext(1085, 275, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b80189fc1a9d4833bedbb4520938c1ac", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b51cf78bcd4c41d7b25e2938ce260f74", async() => {
                 BeginContext(1148, 205, true);
                 WriteLiteral("\r\n        <div class=\"form-group\">\r\n            <input type=\"text\" class=\"form-control\" placeholder=\"Szukaj...\">\r\n        </div>\r\n        <button type=\"submit\" class=\"btn btn-default\">Szukaj</button>\r\n    ");
                 EndContext();
@@ -259,12 +259,12 @@ using PipsiProject.Models;
             WriteLiteral("            <tr class=\"row col-lg-12\" style=\"vertical-align: middle; text-align: left\">\r\n\r\n                <td class=\"col-lg-4\" style=\"vertical-align: middle\">\r\n                    ");
             EndContext();
             BeginContext(1785, 237, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "288c3f08f82c4be289fcfc4f177914fa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aa7f5b58cb78479195adcf6ccf7af9f6", async() => {
                 BeginContext(1833, 26, true);
                 WriteLiteral("\r\n                        ");
                 EndContext();
                 BeginContext(1859, 137, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "50b2932f82ea4c65a8aab59cdced4e53", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "88dc24bed8fd4f3db10be3b3c9cdd269", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.ImageTagHelper>();
@@ -454,7 +454,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper.AppendVersion = true;
             WriteLiteral("\r\n                        </p>\r\n                    </div>\r\n\r\n                </td>\r\n\r\n\r\n                <td class=\"col-lg-1\" style=\"vertical-align:middle\">\r\n                    <ul class=\"media-list btn-group-vertical\">\r\n                        <li >");
             EndContext();
             BeginContext(3678, 143, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0eb8d0cbd320412abf14bf6b05d4389c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f71a9661a376430aa54254c20cfd7b49", async() => {
                 BeginContext(3811, 6, true);
                 WriteLiteral("Edytuj");
                 EndContext();
@@ -491,7 +491,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper.AppendVersion = true;
             WriteLiteral("</li>\r\n                        <li >");
             EndContext();
             BeginContext(3857, 149, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "61acdc8c2fe04bd3a093a0170ee6262c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7ae14dd0f21144c3a759503b5f229f4e", async() => {
                 BeginContext(3993, 9, true);
                 WriteLiteral("Szczegóły");
                 EndContext();
@@ -528,7 +528,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper.AppendVersion = true;
             WriteLiteral("</li>\r\n                        <li >");
             EndContext();
             BeginContext(4042, 142, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9dbc2ffc43dd4e2b834da87056d3d633", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc46e3ac40ac415d8be77d1fe39ff1f5", async() => {
                 BeginContext(4176, 4, true);
                 WriteLiteral("Usuń");
                 EndContext();

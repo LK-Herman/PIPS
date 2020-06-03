@@ -35,3 +35,4 @@ C:\Projects\PipsiProject\PipsiProject\obj\Debug\netcoreapp2.1\PipsiProject.Views
 C:\Projects\PipsiProject\PipsiProject\obj\Debug\netcoreapp2.1\PipsiProject.dll
 C:\Projects\PipsiProject\PipsiProject\obj\Debug\netcoreapp2.1\PipsiProject.pdb
 C:\Projects\PipsiProject\PipsiProject\obj\Debug\netcoreapp2.1\PipsiProject.csproj.CopyComplete
+C:\Projects\PipsiProject\PipsiProject\obj\Debug\netcoreapp2.1\PipsiProject.csprojAssemblyReference.cache

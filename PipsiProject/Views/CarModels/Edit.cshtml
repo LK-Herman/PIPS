@@ -64,9 +64,18 @@
                 <span asp-validation-for="Opis" class="text-danger"></span>
             </div>
 
-            
-    
-           
+            <div class="form-group">
+                <label asp-for="ImageTitle" class="control-label"></label>
+                <input asp-for="ImageTitle" class="form-control" />
+                <span asp-validation-for="ImageTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageFile" class="control-label"></label>
+                <input asp-for="ImageFile" accept="image/png, image/jpg, image/jpeg" />
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
+            </div>
+
+
 
             <div class="form-group">
                 <input class="btn btn-default" type="submit" value="Zapisz" />

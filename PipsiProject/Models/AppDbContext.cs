@@ -17,5 +17,12 @@ namespace PipsiProject.Models
 
         public DbSet<CarModel> Cars { get; set; }
         public DbSet<ImageModel> Images { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {            
+            modelBuilder.Entity<CarModel>().ToTable("Cars");
+            modelBuilder.Entity<ImageModel>().ToTable("Images");
+        }
+
     }
 }

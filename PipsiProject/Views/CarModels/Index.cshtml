@@ -38,7 +38,7 @@
     </select>
     
 
-    <form class="navbar-form navbar-left form-group" role="search">
+    <form class="navbar-form navbar-left form-group" type="search" role="search">
         <div class="form-group">
             <input type="text" class="form-control" placeholder="Szukaj...">
         </div>
@@ -64,7 +64,10 @@
 
                 <td class="col-lg-4" style="vertical-align: middle">
                     <a asp-action="Details" asp-route-id="@item.Id">
-                        <img class="img-rounded img-responsive" src="@("~/images/carimg/"+ item.ImageName)" asp-append-version="true" width="350" height="250" />
+                        @*<img class="img-rounded img-responsive" src="@("~/images/carimg/"+ item.CarImage.ImageName)" asp-append-version="true" width="350" height="250" />*@
+                        <img class="img-rounded img-responsive" src="@("~/images/carimg/")@Html.DisplayFor(modelItem => item.CarImage.ImageName)" asp-append-version="true" width="350" height="250" />
+                        @Html.DisplayFor(modelItem => item.CarImage.ImageName) 
+                        @Html.DisplayFor(modelItem => item.CarImage.ImageId)
                     </a>
                 </td>
                 

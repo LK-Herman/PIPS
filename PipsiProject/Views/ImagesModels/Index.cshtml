@@ -1,0 +1,46 @@
+﻿@model IEnumerable<PipsiProject.Models.ImageModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageName)
+            </th>
+            <th>
+               
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageName)
+            </td>
+            <td>
+                <img class="img-rounded img-responsive" src="@("~/images/carimg/"+ item.ImageName)" asp-append-version="true" width="350" height="250" />
+            </td>
+            <td>
+                <a class="btn btn-success" asp-action="Edit" asp-route-id="@item.ImageId">Edytuj</a> |
+                
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.ImageId">Usuń</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

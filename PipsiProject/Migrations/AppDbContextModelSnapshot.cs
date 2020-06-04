@@ -25,13 +25,9 @@ namespace PipsiProject.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int?>("CarImageImageId");
+
                     b.Property<int>("Cena");
-
-                    b.Property<string>("ImageName")
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("ImageTitle")
-                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Klasa");
 
@@ -56,6 +52,8 @@ namespace PipsiProject.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CarImageImageId");
+
                     b.ToTable("Cars");
                 });
 
@@ -68,12 +66,19 @@ namespace PipsiProject.Migrations
                     b.Property<string>("ImageName")
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("Title")
+                    b.Property<string>("ImageTitle")
                         .HasColumnType("nvarchar(50)");
 
                     b.HasKey("ImageId");
 
                     b.ToTable("Images");
+                });
+
+            modelBuilder.Entity("PipsiProject.Models.CarModel", b =>
+                {
+                    b.HasOne("PipsiProject.Models.ImageModel", "CarImage")
+                        .WithMany()
+                        .HasForeignKey("CarImageImageId");
                 });
 #pragma warning restore 612, 618
         }

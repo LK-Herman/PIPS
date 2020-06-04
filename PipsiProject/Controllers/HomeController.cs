@@ -16,17 +16,7 @@ namespace PipsiProject.Controllers
             return View();
         }
 
-
-
-
-
-
-
-
-
-
-
-
+                                    
         public IActionResult Samochody()
         {
             ViewData["Message"] = "Your application description page.";

@@ -23,9 +23,15 @@ namespace PipsiProject.Controllers
             _hostEnvironment = hostEnvironment;
         }
 
+        
         // GET: CarModels
         public async Task<IActionResult> Index()
-        {
+        {  
+            //var carAndImg = _context.Cars
+            //.Include(c => c.Images )
+            //.AsNoTracking();
+            //return View(await carAndImg.ToListAsync());
+
             return View(await _context.Cars.ToListAsync());
         }
         
@@ -60,27 +66,14 @@ namespace PipsiProject.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Marka,Model,Klasa,PojSilnika,Przebieg,RokProd,Paliwo,Kolor,Cena,Opis,ImageTitle,ImageFile")] CarModel carModel)
+        public async Task<IActionResult> Create([Bind("Id,Marka,Model,Klasa,PojSilnika,Przebieg,RokProd,Paliwo,Kolor,Cena,Opis,CarImage")] CarModel carModel)
         {
             if (ModelState.IsValid)
             {
-
-                // zapisywanie w katalogu ~/wwwroot/images/carimg
-                
-                string wwwRootPath = _hostEnvironment.WebRootPath;
-                string fileName = Path.GetFileNameWithoutExtension(carModel.ImageFile.FileName);
-                string extension = Path.GetExtension(carModel.ImageFile.FileName);
-                carModel.ImageName = fileName = fileName + DateTime.Now.ToString("yymmssfff")+extension;
-                string path = Path.Combine(wwwRootPath + "/images/carimg/", fileName);
-                using (var fileStream = new FileStream(path, FileMode.Create))
-                {
-                    await carModel.ImageFile.CopyToAsync(fileStream);
-                }
-
+                //public async Task<IActionResult> Create([Bind("Id,Marka,Model,Klasa,PojSilnika,Przebieg,RokProd,Paliwo,Kolor,Cena,Opis,ImageTitle,ImageFile")] CarModel carModel)
+               
                 // zapisanie rekordów
-
-
-
+                               
                 _context.Add(carModel);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -112,7 +105,7 @@ namespace PipsiProject.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Marka,Model,Klasa,PojSilnika,Przebieg,RokProd,Paliwo,Kolor,Cena,Opis,ImageTitle,ImageFile")] CarModel carModel)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Marka,Model,Klasa,PojSilnika,Przebieg,RokProd,Paliwo,Kolor,Cena,Opis,Carimg")] CarModel carModel)
         {
             if (id != carModel.Id)
             {
@@ -123,19 +116,8 @@ namespace PipsiProject.Controllers
             {
                 try
                 {
-
-
-                    string wwwRootPath = _hostEnvironment.WebRootPath;
-                    string fileName = Path.GetFileNameWithoutExtension(carModel.ImageFile.FileName);
-                    string extension = Path.GetExtension(carModel.ImageFile.FileName);
-                    carModel.ImageName = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
-                    string path = Path.Combine(wwwRootPath + "/images/carimg/", fileName);
-                    using (var fileStream = new FileStream(path, FileMode.Create))
-                    {
-                        await carModel.ImageFile.CopyToAsync(fileStream);
-                    }
-
-
+                    // public async Task<IActionResult> Edit(int id, [Bind("Id,Marka,Model,Klasa,PojSilnika,Przebieg,RokProd,Paliwo,Kolor,Cena,Opis,ImageTitle,ImageFile")] CarModel carModel)
+                    
 
                     _context.Update(carModel);      // ***********
                     await _context.SaveChangesAsync();
@@ -182,11 +164,11 @@ namespace PipsiProject.Controllers
             var carModel = await _context.Cars.FindAsync(id);
 
             // usuwanie zdjęcia z folderu ~/images/carimg
-            var imagePath = Path.Combine(_hostEnvironment.WebRootPath, "images/carimg/", carModel.ImageName);
-            if (System.IO.File.Exists(imagePath))
-            {
-                System.IO.File.Delete(imagePath);
-            }
+            //var imagePath = Path.Combine(_hostEnvironment.WebRootPath, "images/carimg/", carModel.ImageName);
+            //if (System.IO.File.Exists(imagePath))
+            //{
+            //    System.IO.File.Delete(imagePath);
+            //}
 
             // usuwanie rekordu DB
 

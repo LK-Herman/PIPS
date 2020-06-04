@@ -83,7 +83,7 @@ using PipsiProject.Models;
             ");
             EndContext();
             BeginContext(481, 77, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "9c7394874e8e45f88bf61489e9ef698e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "eb439698d90b46b79618d2578bbceba9", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -110,7 +110,7 @@ using PipsiProject.Models;
                 ");
             EndContext();
             BeginContext(837, 105, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "44037f4e0ef94096a97cef6fb5dcf2d9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b67d3d3da08646bc9740ecf358ae070c", async() => {
                 BeginContext(921, 17, true);
                 WriteLiteral(" Klasa luksusowa ");
                 EndContext();
@@ -137,7 +137,7 @@ using PipsiProject.Models;
             WriteLiteral("\r\n                    \r\n                </p>\r\n            </div>\r\n        </div>\r\n        <div class=\"item\">\r\n            ");
             EndContext();
             BeginContext(1064, 79, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b8b9beb73979458aac07f6305882ff1e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "470574b12c954193ab3cbd19f62cbd67", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -157,7 +157,7 @@ using PipsiProject.Models;
             WriteLiteral("\r\n            <div class=\"carousel-caption img-rounded\" role=\"option\" style=\"background: rgba(0, 0, 0, 0.4);\">\r\n                <p>\r\n                    Jeżeli jesteś fanem szybkości...\r\n                </p>\r\n                <p>\r\n                    ");
             EndContext();
             BeginContext(1393, 160, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2e6416df6a01479d9a867cf41594bebc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8572db3bd2094445b3830a6232b0b081", async() => {
                 BeginContext(1487, 62, true);
                 WriteLiteral("\r\n                        Klasa sportowa\r\n                    ");
                 EndContext();
@@ -184,7 +184,7 @@ using PipsiProject.Models;
             WriteLiteral("\r\n                </p>\r\n            </div>\r\n        </div>\r\n        <div class=\"item\">\r\n            ");
             EndContext();
             BeginContext(1653, 74, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7e89c3c32ad642ceb955b5c1a0ebef19", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "21d8e4b8e97b491ba1153bbf2e6adc99", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -210,7 +210,7 @@ using PipsiProject.Models;
                     ");
             EndContext();
             BeginContext(2024, 153, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f5a8c2dd381e4a4da8600d95703c6261", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "54ad747ef866464bb0a6d068f5a3745c", async() => {
                 BeginContext(2108, 65, true);
                 WriteLiteral("\r\n                        Klasa ekonomiczna\r\n                    ");
                 EndContext();

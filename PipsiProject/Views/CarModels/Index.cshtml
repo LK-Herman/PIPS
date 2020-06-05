@@ -25,24 +25,29 @@
         <span> Dodaj samochód</span>
     </a>
 
-    <select class="navbar-left form-control  navbar-form form-group" style="background-color:white; border: 1px solid lightgrey">
-        <option>Ekonomiczna</option>
-        <option>Sportowa</option>
-        <option>Luksusowa</option>
-    </select>
+    
 
-    <select class="form-control navbar-form navbar-left" id="Kolor" style="background-color:white; border: 1px solid lightgrey">
-        <option>Biały</option>
-        <option>Czerwony</option>
-        <option>Biebieski</option>
-    </select>
+    <div class="dropdown navbar-left form-control  navbar-form form-group">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Wybierz Klasę
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a asp-action="Index" asp-route-id="">Wszystkie</a></li>
+            <li><hr style="margin: 2px" /></li>
+            <li><a asp-action="Index" asp-route-id="1">Ekonomiczna</a></li>
+            <li><a asp-action="Index" asp-route-id="2">Sportowa</a></li>
+            <li><a asp-action="Index" asp-route-id="3">Luksusowa</a></li>
+
+        </ul>
+    </div>
     
 
     <form class="navbar-form navbar-left form-group" type="search" role="search">
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Szukaj...">
+           <input asp-action="Index" type="text" class="form-control" placeholder="Szukaj...">
         </div>
-        <button type="submit" class="btn btn-default">Szukaj</button>
+        <button type="submit" value="submit" class="btn btn-default">Szukaj</button>
     </form>
 
 </nav>
@@ -59,7 +64,8 @@
         @foreach (var item in Model)
         {
 
-            var newDate = item.RokProd.ToShortDateString();
+           //var newDate = item.RokProd.ToShortDateString();
+            var newDate = item.RokProd.Year.ToString();
         <tr class="row col-lg-12" style="vertical-align: middle; text-align: left">
 
             <td class="col-lg-4" style="vertical-align: middle">

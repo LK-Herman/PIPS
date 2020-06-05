@@ -36,3 +36,10 @@ C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\PipsiProject.Vie
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\PipsiProject.dll
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\PipsiProject.pdb
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\PipsiProject.csproj.CopyComplete
+C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\CarModels\CarAndImageCreate.g.cshtml.cs
+C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\ImagesModels\Create.g.cshtml.cs
+C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\ImagesModels\Delete.g.cshtml.cs
+C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\ImagesModels\Details.g.cshtml.cs
+C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\ImagesModels\Edit.g.cshtml.cs
+C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\ImagesModels\Index.g.cshtml.cs
+C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\ImagesModels\ViewChoice.g.cshtml.cs

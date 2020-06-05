@@ -10,14 +10,12 @@
 <hr />
 
    
-<form asp-action="Create" enctype="multipart/form-data">
+<form asp-action="Edit" enctype="multipart/form-data">
     <div class="row col-md-12">
 
         <div class="col-md-4">
 
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-
             <div class="form-group">
                 <label asp-for="Marka" class="control-label"></label>
                 <input asp-for="Marka" class="form-control" />
@@ -30,17 +28,32 @@
             </div>
             <div class="form-group">
                 <label asp-for="Klasa" class="control-label"></label>
-                <input asp-for="Klasa" class="form-control" />
-                <span asp-validation-for="Klasa" class="text-danger"></span>
+                <div class="form-inline">
+
+                    <input asp-for="Klasa" name="Klasa" type="radio" id="Ekonomiczna" class="form-control" value="Ekonomiczna" />
+                    <label asp-for="Klasa" for="Ekonomiczna" class="control-label">Ekonomiczna</label>
+                </div>
+                <div class="form-inline">
+
+                    <input asp-for="Klasa" name="Klasa" type="radio" id="Sportowa" class="form-control" value="Sportowa" />
+                    <label asp-for="Klasa" for="Sportowa" class="control-label">Sportowa</label>
+                </div>
+                <div class="form-inline">
+
+                    <input asp-for="Klasa" name="Klasa" type="radio" id="Luksusowa" class="form-control" value="Luksusowa" />
+                    <label asp-for="Klasa" for="Luksusowa" class="control-label">Luksusowa</label>
+                    <span asp-validation-for="Klasa" class="text-danger"></span>
+                </div>
             </div>
+
+
+        </div>
+        <div class="col-md-4">
             <div class="form-group">
                 <label asp-for="PojSilnika" class="control-label"></label>
                 <input asp-for="PojSilnika" class="form-control" />
                 <span asp-validation-for="PojSilnika" class="text-danger"></span>
             </div>
-
-        </div>
-        <div class="col-md-4">
             <div class="form-group">
                 <label asp-for="Przebieg" class="control-label"></label>
                 <input asp-for="Przebieg" class="form-control" />
@@ -48,7 +61,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="RokProd" class="control-label"></label>
-                <input asp-for="RokProd" class="form-control" />
+                <input asp-for="RokProd" type="month" class="form-control" />
                 <span asp-validation-for="RokProd" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -56,13 +69,14 @@
                 <input asp-for="Paliwo" class="form-control" />
                 <span asp-validation-for="Paliwo" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Kolor" class="control-label"></label>
-                <input asp-for="Kolor" class="form-control" />
-                <span asp-validation-for="Kolor" class="text-danger"></span>
-            </div>
+
         </div>
         <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="Kolor" class="control-label"></label>
+                <input asp-for="Kolor" type="color" class="form-control" />
+                <span asp-validation-for="Kolor" class="text-danger"></span>
+            </div>
             <div class="form-group">
                 <label asp-for="Opis" class="control-label"></label>
                 <input asp-for="Opis" class="form-control" />
@@ -77,16 +91,17 @@
                 <span asp-validation-for="Cena" class="text-danger"></span>
             </div>
 
-            @*<div class="form-group">
-                <label asp-for="ImageTitle" class="control-label"></label>
-                <input asp-for="ImageTitle" class="form-control" />
-                <span asp-validation-for="ImageTitle" class="text-danger"></span>
+            <div class="form-group">
+                <label asp-for="CarImage.ImageTitle" class="control-label"></label>
+                <input asp-for="CarImage.ImageTitle" class="form-control" />
+                <span asp-validation-for="CarImage.ImageTitle" class="text-danger"></span>
             </div>
             <div class="form-group ">
-                <label class="control-label" asp-for="ImageFile"></label>
-                <input class="form-control-static" asp-for="ImageFile" accept="image/png, image/jpg, image/jpeg" />
-                <span asp-validation-for="ImageFile" class="text-danger"></span>
-            </div>*@
+                <label class="control-label" asp-for="CarImage.ImageFile"></label>
+                <input class="form-control-static" asp-for="CarImage.ImageFile" value="CarImage.ImageName" accept="image/png, image/jpg, image/jpeg" />
+                <span asp-validation-for="CarImage.ImageFile" class="text-danger"></span>
+            </div>
+
         </div>
 
     </div>

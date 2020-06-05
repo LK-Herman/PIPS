@@ -8,12 +8,30 @@
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed:400,700&display=swap&subset=latin-ext"
+              rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c0ecb9f799.js" crossorigin="anonymous"></script>
+      
+        
+        <link rel="stylesheet" href="~/css/Konrad/styleMain.css">
+        <link rel="stylesheet" href="~/css/Konrad/styleContact.css">
+        <link rel="stylesheet" href="~/css/Konrad/styleMe.css">
+       
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed:400,700&display=swap&subset=latin-ext"
+              rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c0ecb9f799.js" crossorigin="anonymous"></script>
+      
+       
+        <link rel="stylesheet" href="~/css/Konrad/styleMain.css">
+        <link rel="stylesheet" href="~/css/Konrad/styleContact.css">
+        <link rel="stylesheet" href="~/css/Konrad/styleMe.css">
+        
     </environment>
 </head>
 <body>
@@ -31,7 +49,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
 
-                    <li><a asp-area="" asp-controller="CarModels" asp-action="Index">Samochody</a></li>
+                    <li><a asp-area="" asp-controller="CarModels" asp-route-id="" asp-action="Index">Samochody</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Kontakt">Kontakt</a></li>
                     <li><a asp-area="" asp-controller="ImagesModels" asp-action="Index">Galeria</a></li>
                 </ul>
@@ -72,6 +90,13 @@
                 integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+                integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+        <script src="~/js/menu.js"></script>
+
+
     </environment>
 
     @RenderSection("Scripts", required: false)

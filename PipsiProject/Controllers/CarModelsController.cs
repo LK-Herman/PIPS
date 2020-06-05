@@ -25,44 +25,94 @@ namespace PipsiProject.Controllers
 
 
         // GET: CarModels
-      
-        public async Task<IActionResult> Index()
-        {
-            var carAndImg = _context.Cars
-            .Include(c => c.CarImage)
-            .AsNoTracking();
-            return View(await carAndImg.ToListAsync());
 
-            //return View(await _context.Cars.ToListAsync());
-        }
-        
-       
+        //public async Task<IActionResult> Index()
+        //{
+        //    var carAndImg = _context.Cars
+        //    .Include(c => c.CarImage)
+        //    .AsNoTracking();
+        //    return View(await carAndImg.ToListAsync());
 
-        // GET: CarModels/Details/5
-        public async Task<IActionResult> Details(int? id)
+        //    //return View(await _context.Cars.ToListAsync());
+        //}
+
+        public async Task<IActionResult> Index(int? id)
         {
             var carAndImg = _context.Cars
            .Include(c => c.CarImage)
            .AsNoTracking();
-           // return View(await carAndImg.ToListAsync());
+
+            if (id != null)
+            {
+                string klasa = "";
+                switch (id)
+                {
+                    case 1:
+                        klasa = "Ekonomiczna";
+                        break;
+                    case 2:
+                        klasa = "Sportowa";
+                        break;
+                    case 3:
+                        klasa = "Luksusowa";
+                        break;
+                   
+                }
+
+
+                carAndImg = _context.Cars
+                .Include(c => c.CarImage)
+                .Where(c => c.Klasa.Equals(klasa))
+                .AsNoTracking();
+                return View(await carAndImg.ToListAsync());
+            }
+            else
+            {
+
+                return View(await carAndImg.ToListAsync());
+                //return View(await _context.Cars.ToListAsync());
+            }
+        }
+
+
+        public async Task<IActionResult> IndexEko()
+        {
+            var carAndImg = _context.Cars
+            .Include(c => c.CarImage)
+            .Where(c => c.Klasa == "Ekonomiczna")
+            .AsNoTracking();
+
+            return View(await carAndImg.ToListAsync());
+
+            //return View(await _context.Cars.ToListAsync());
+        }
+
+
+
+        // GET: CarModels/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            var carAndImg = await _context.Cars
+           .Include(c => c.CarImage)
+           .AsNoTracking()
+           .FirstOrDefaultAsync(m => m.Id == id);
+            // return View(await carAndImg.ToListAsync());
 
             if (id == null)
             {
                 return NotFound();
             }
 
-            var carDetails = await carAndImg
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (carDetails == null)
+            if (carAndImg == null)
             {
                 return NotFound();
             }
 
-            return View(carDetails);
+            return View(carAndImg);
         }
 
         // GET: CarModels/Create
-        
+
         public IActionResult Create()
         {
             return View();
@@ -97,7 +147,7 @@ namespace PipsiProject.Controllers
 
                 _context.Add(carModel);
                 await _context.SaveChangesAsync();
-               
+
                 return RedirectToAction(nameof(Index));
             }
             return View(carModel);
@@ -105,7 +155,7 @@ namespace PipsiProject.Controllers
 
 
 
-       
+
 
 
         // GET: CarModels/Edit/5
@@ -142,9 +192,9 @@ namespace PipsiProject.Controllers
                 try
                 {
                     // public async Task<IActionResult> Edit(int id, [Bind("Id,Marka,Model,Klasa,PojSilnika,Przebieg,RokProd,Paliwo,Kolor,Cena,Opis,ImageTitle,ImageFile")] CarModel carModel)
-                    
 
-                    _context.Update(carModel);      // ***********
+
+                    _context.UpdateRange(carModel);      // *********** zmiana z Update na UpdateRange
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -166,13 +216,18 @@ namespace PipsiProject.Controllers
         // GET: CarModels/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+            var carModel = await _context.Cars
+                .Include(c => c.CarImage)
+               .AsNoTracking()
+               .FirstOrDefaultAsync(m => m.Id == id);
+
+
             if (id == null)
             {
                 return NotFound();
             }
 
-            var carModel = await _context.Cars
-                .FirstOrDefaultAsync(m => m.Id == id);
+            
             if (carModel == null)
             {
                 return NotFound();
@@ -207,7 +262,7 @@ namespace PipsiProject.Controllers
             return _context.Cars.Any(e => e.Id == id);
         }
 
-                           
+
 
         public ActionResult Display()
         {
@@ -217,5 +272,5 @@ namespace PipsiProject.Controllers
 }
 
 
-    
+
 

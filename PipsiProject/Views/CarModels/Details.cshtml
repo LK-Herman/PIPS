@@ -5,109 +5,133 @@
 }
 
 
-
-<div>
-    
     <hr />
-    <div class="row col-lg-12 ">
-        <div class="jumbotron col-lg-12" style="background-color:#e2e2e2; box-shadow: rgba(0,0,0,0.4) 4px 4px 4px; ">
-            <div class="col-lg-11">
-                <h2>
+    <div class="col-lg-12">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10" style="background-color:#f5f5f5; box-shadow: rgba(0,0,0,0.4) 4px 4px 4px; ">
 
-                    <span>@Html.DisplayFor(model => model.Marka) @Html.DisplayFor(model => model.Model)</span>
+            <div class="col-lg-12">
+                <div class="col-lg-4">
+                    <h2>
+                        <span>@Html.DisplayFor(model => model.Marka) @Html.DisplayFor(model => model.Model)</span>
+                    </h2>
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-rounded img-responsive" src="@("~/images/carimg/"+ Model.CarImage.ImageName)" asp-append-version="true" style="width:auto; height:auto;" />
+                </div>
 
+                <div class="col-lg-3" style="text-align:center; vertical-align: middle;">
 
-                </h2>
-                <img class="img-rounded img-responsive" src="@("~/images/carimg/"+ Model.CarImage.ImageName)" asp-append-version="true" style="width=auto; height=auto;" />
+                    <div class="img-rounded img-rounded" style="background-color:#f2f2f2; padding:1em 2em;  ">
+
+                        <h1 style="color:orange; font-family:'Century Gothic'">@Html.DisplayFor(modelItem => Model.Cena) </h1>
+                        <h4 style="color: dimgray">PLN za dzień</h4>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-1" style="vertical-align:middle">
+                    <ul class="media-list btn-group-vertical">
+                        <li><a class="btn  btn-block " style="margin:10px 0px; background-color:#3e3e3e; color:white " asp-action="Edit" asp-route-id="@Model.Id">Edytuj</a></li>
+                        <li><a class="btn  btn-block " style="margin:10px 0px; background-color:orange; color:white " asp-action="Delete" asp-route-id="@Model.Id">Usuń</a></li>
+                        <li><br /></li>
+                        <li><a class="btn  btn-block" style="margin:10px 0px; background-color:#3e3e3e; color:white " asp-action="Index">Powrót</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-lg-1" style="vertical-align:middle">
-                <ul class="media-list btn-group-vertical">
-                    <li><a class="btn  btn-block " style="margin:10px 0px; background-color:#3e3e3e; color:white " asp-action="Edit" asp-route-id="@Model.Id">Edytuj</a></li>
-                    <li><a class="btn  btn-block " style="margin:10px 0px; background-color:#3e3e3e; color:white " asp-action="Details" asp-route-id="@Model.Id">Szczegóły</a></li>
-                    <li><a class="btn  btn-block " style="margin:10px 0px; background-color:orange; color:white " asp-action="Delete" asp-route-id="@Model.Id">Usuń</a></li>
-                    <li><br /></li>
-                    <li><a class="btn  btn-block"  style="margin:10px 0px; background-color:#3e3e3e; color:white " asp-action="Index">Powrót</a></li>
-                </ul>
-            </div>
+
+
             <div class="col-lg-12" style="background-color:white; margin:1%; padding:2%">
+                <div class="col-lg-9">
+                    <h4>
+                        <span class="glyphicon glyphicon-book"></span>
+                        @Html.DisplayNameFor(model => model.Opis)
+                    </h4>
+                    <hr />
+                    <dl>
+                        <dt>
 
-                <h4>
-                    <span class="glyphicon glyphicon-book"></span>
-                    @Html.DisplayNameFor(model => model.Opis)
-                </h4>
-                <hr />
-                <dl>
-                    <dt>
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Opis)
+                        </dd>
+                    </dl>
+                </div>
 
-                    </dt>
-                    <dd>
-                        @Html.DisplayFor(model => model.Opis)
-                    </dd>
-                </dl>
+
+                
             </div>
-            <div class="col-lg-6 text-left" style="background-color:white; margin:1%; padding:2%">
+
+
+            <div class=" col-lg-12 text-left" style="background-color:white; margin:1%; padding:2%">
+
                 <h4>
                     <span class="glyphicon glyphicon-wrench"></span>
                     <span>Parametry:</span>
 
                 </h4>
+
                 <hr />
-                <dl class="">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-4">
 
-                    <dt>
-                        @Html.DisplayNameFor(model => model.Klasa)
-                    </dt>
-                    <dd>
-                        @Html.DisplayFor(model => model.Klasa)
-                    </dd>
-                    <dt>
-                        @Html.DisplayNameFor(model => model.PojSilnika)
-                    </dt>
-                    <dd>
-                        @Html.DisplayFor(model => model.PojSilnika)
-                    </dd>
-                    <dt>
-                        @Html.DisplayNameFor(model => model.Przebieg)
-                    </dt>
-                    <dd>
-                        @Html.DisplayFor(model => model.Przebieg)
-                    </dd>
-                    <dt>
-                        @Html.DisplayNameFor(model => model.RokProd)
-                    </dt>
-                    <dd>
-                        @Html.DisplayFor(model => model.RokProd)
-                    </dd>
-                    <dt>
-                        @Html.DisplayNameFor(model => model.Paliwo)
-                    </dt>
-                    <dd>
-                        @Html.DisplayFor(model => model.Paliwo)
-                    </dd>
-                    <dt>
-                        @Html.DisplayNameFor(model => model.Kolor)
-                    </dt>
-                    <dd>
-                        @Html.DisplayFor(model => model.Kolor)
-                    </dd>
-                    <dt>
-                        @Html.DisplayNameFor(model => model.Cena)
-                    </dt>
-                    <dd>
-                        @Html.DisplayFor(model => model.Cena)
-                    </dd>
+                    <dl>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Klasa)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Klasa)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.PojSilnika)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.PojSilnika)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Przebieg)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Przebieg)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.RokProd)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.RokProd)
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-lg-4">
+                    <dl>
 
-                </dl>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Paliwo)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Paliwo)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Kolor)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Kolor)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Cena)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Cena)
+                        </dd>
+
+                    </dl>
+                </div>
+                <div class="col-lg-1"></div>
+
             </div>
 
 
-
-
-
-
-
-
         </div>
-    </div>
-</div>
+        <div class="col-lg-1"></div>
 
+    </div>

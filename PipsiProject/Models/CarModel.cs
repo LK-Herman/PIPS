@@ -23,10 +23,12 @@ namespace PipsiProject.Models
         public string Klasa { get; set; }
         [DisplayName("Pojemność skokowa (cm3)")]
         //[RegularExpression(@"^[0-9]""'\s-]*$")]     // ogranicza wprowadzanie znaków - sprawdz pozniej
-        [Range(1000, 8000)]
+     //   [MaxLength(4)]
+        [Range(1000, 9999, ErrorMessage ="Wprowadź pojemność silnika w cm3")]
         public int PojSilnika { get; set; }
+     //   [MaxLength(6)]
         [DisplayName("Przebieg (km)")]
-        [Range(0, 500000)]
+        [Range(1000, 999999, ErrorMessage ="Msisz wprowadzić prawidłowy przebieg w km")]
         public double Przebieg { get; set; }
         [DisplayName("Rok produkcji")]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM}", ApplyFormatInEditMode = true)]
@@ -35,8 +37,9 @@ namespace PipsiProject.Models
         public string Paliwo { get; set; }
         public string Kolor { get; set; }
         [DisplayName("Cena wypożyczenia (1 dzień)")]
-        [Range(1, 2000)]
+     //   [MaxLength(4)]
         public int Cena { get; set; }
+      //  [MaxLength(600)]
         [Column(TypeName = "nvarchar(MAX)")]
         public string Opis { get; set; }
 

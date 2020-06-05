@@ -19,8 +19,8 @@ namespace PipsiProject.Controllers
 
         public ImagesModelsController(AppDbContext context, IHostingEnvironment hostEnvironment)
         {
-            this._context = context;
-            this._hostEnvironment = hostEnvironment;
+            _context = context;
+            _hostEnvironment = hostEnvironment;
         }
 
         // GET: ImagesModels
@@ -46,6 +46,10 @@ namespace PipsiProject.Controllers
 
             return View(imageModel);
         }
+
+
+
+
 
         // GET: ImagesModels/Create
         public IActionResult Create()

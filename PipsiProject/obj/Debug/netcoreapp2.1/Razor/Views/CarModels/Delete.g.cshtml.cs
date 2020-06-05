@@ -304,12 +304,12 @@ using PipsiProject.Models;
             WriteLiteral("\r\n        </div>\r\n        <div class=\"col-lg-2 \">\r\n\r\n            ");
             EndContext();
             BeginContext(3612, 308, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3efccf573a3495eb089fed17eadc168", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ccf6e1de1f574fc8b85ed1836eddb40d", async() => {
                 BeginContext(3665, 18, true);
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(3683, 36, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "3373e487843a49ba86513c1db10b217d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "21a8d10c7e9a40b59bd7646b3697c0ab", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -334,7 +334,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\r\n                <input type=\"submit\" value=\"Usuń auto\" class=\"btn btn-danger\" />\r\n                <br />\r\n                ");
                 EndContext();
                 BeginContext(3843, 56, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "23526928d6104a80a295633c8542691c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ee6908efe9504c088762b59873ae42b8", async() => {
                     BeginContext(3889, 6, true);
                     WriteLiteral("Powrót");
                     EndContext();

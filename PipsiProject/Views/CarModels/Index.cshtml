@@ -60,47 +60,46 @@
         {
 
             var newDate = item.RokProd.ToShortDateString();
-            <tr class="row col-lg-12" style="vertical-align: middle; text-align: left">
+        <tr class="row col-lg-12" style="vertical-align: middle; text-align: left">
 
-                <td class="col-lg-4" style="vertical-align: middle">
-                    <a asp-action="Details" asp-route-id="@item.Id">
-                        @*<img class="img-rounded img-responsive" src="@("~/images/carimg/"+ item.CarImage.ImageName)" asp-append-version="true" width="350" height="250" />*@
-                        <img class="img-rounded img-responsive" src="@("~/images/carimg/")@Html.DisplayFor(modelItem => item.CarImage.ImageName)" asp-append-version="true" width="350" height="250" />
-                        @Html.DisplayFor(modelItem => item.CarImage.ImageName) 
-                        @Html.DisplayFor(modelItem => item.CarImage.ImageId)
-                    </a>
-                </td>
-                
-                <td class="col-lg-3" style="vertical-align: middle">
-                    <p>
-                        <h3 class="text-capitalize" style="color:#01791d;">@Html.DisplayFor(modelItem => item.Marka) @Html.DisplayFor(modelItem => item.Model)</h3>
-                    <p> <label>@Html.DisplayNameFor(modelItem => item.Klasa)</label>:  @Html.DisplayFor(modelItem => item.Klasa) </p>
-                    <p> <label>@Html.DisplayNameFor(modelItem => item.PojSilnika) </label>:  @Html.DisplayFor(modelItem => item.PojSilnika) </p>
-                    <p> <label>@Html.DisplayNameFor(modelItem => item.Przebieg) </label>:  @Html.DisplayFor(modelItem => item.Przebieg) </p>
-                    <p> <label>@Html.DisplayNameFor(modelItem => item.RokProd)</label>:  @newDate</p>
-                </td>
+            <td class="col-lg-4" style="vertical-align: middle">
+                <a asp-action="Details" asp-route-id="@item.Id">
+                   
+                    <img class="img-rounded img-responsive" src="@("~/images/carimg/"+ item.CarImage.ImageName)" asp-append-version="true" width="350" height="250" />
+                   
+                </a>
+            </td>
+        
+            <td class="col-lg-3" style="vertical-align: middle">
+                <p>
+                    <h3 class="text-capitalize" style="color:#01791d;">@Html.DisplayFor(modelItem => item.Marka) @Html.DisplayFor(modelItem => item.Model)</h3>
+                <p> <label>@Html.DisplayNameFor(modelItem => item.Klasa)</label>:  @Html.DisplayFor(modelItem => item.Klasa) </p>
+                <p> <label>@Html.DisplayNameFor(modelItem => item.PojSilnika) </label>:  @Html.DisplayFor(modelItem => item.PojSilnika) </p>
+                <p> <label>@Html.DisplayNameFor(modelItem => item.Przebieg) </label>:  @Html.DisplayFor(modelItem => item.Przebieg) </p>
+                <p> <label>@Html.DisplayNameFor(modelItem => item.RokProd)</label>:  @newDate</p>
+            </td>
 
-                <td class="col-lg-4" style="text-align:center; vertical-align: middle">
-                    <div class="img-rounded"  >
-                        <p style="font-size: 40px; color:orange; font-family:'Century Gothic'" >@Html.DisplayFor(modelItem => item.Cena) </p>
-                        <p style="color: dimgray; font-size:16px ">PLN za dzień</p>
-                        <p class="img-rounded" style="background-color:#f2f2f2; padding:1em 2em; font-size: 12px ">
-                            @Html.DisplayFor(modelItem => item.Opis)
-                        </p>
-                    </div>
+            <td class="col-lg-4" style="text-align:center; vertical-align: middle">
+                <div class="img-rounded">
+                    <p style="font-size: 40px; color:orange; font-family:'Century Gothic'">@Html.DisplayFor(modelItem => item.Cena) </p>
+                    <p style="color: dimgray; font-size:16px ">PLN za dzień</p>
+                    <p class="img-rounded" style="background-color:#f2f2f2; padding:1em 2em; font-size: 12px ">
+                        @Html.DisplayFor(modelItem => item.Opis)
+                    </p>
+                </div>
 
-                </td>
+            </td>
 
 
-                <td class="col-lg-1" style="vertical-align:middle">
-                    <ul class="media-list btn-group-vertical">
-                        <li ><a class="btn  btn-block " style="margin:10px 0px; background-color:#3e3e3e; color:white " asp-action="Edit" asp-route-id="@item.Id">Edytuj</a></li>
-                        <li ><a class="btn  btn-block " style="margin:10px 0px; background-color:#3e3e3e; color:white " asp-action="Details" asp-route-id="@item.Id">Szczegóły</a></li>
-                        <li ><a class="btn  btn-block " style="margin:10px 0px; background-color:orange; color:white " asp-action="Delete" asp-route-id="@item.Id">Usuń</a></li>
-                    </ul>
-                </td>
+            <td class="col-lg-1" style="vertical-align:middle">
+                <ul class="media-list btn-group-vertical">
+                    <li><a class="btn  btn-block " style="margin:10px 0px; background-color:#3e3e3e; color:white " asp-action="Edit" asp-route-id="@item.Id">Edytuj</a></li>
+                    <li><a class="btn  btn-block " style="margin:10px 0px; background-color:#3e3e3e; color:white " asp-action="Details" asp-route-id="@item.Id">Szczegóły</a></li>
+                    <li><a class="btn  btn-block " style="margin:10px 0px; background-color:orange; color:white " asp-action="Delete" asp-route-id="@item.Id">Usuń</a></li>
+                </ul>
+            </td>
 
-            </tr>
+        </tr>
 
         }
     </tbody>

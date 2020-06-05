@@ -23,16 +23,17 @@ namespace PipsiProject.Controllers
             _hostEnvironment = hostEnvironment;
         }
 
-        
-        // GET: CarModels
-        public async Task<IActionResult> Index()
-        {  
-            //var carAndImg = _context.Cars
-            //.Include(c => c.Images )
-            //.AsNoTracking();
-            //return View(await carAndImg.ToListAsync());
 
-            return View(await _context.Cars.ToListAsync());
+        // GET: CarModels
+      
+        public async Task<IActionResult> Index()
+        {
+            var carAndImg = _context.Cars
+            .Include(c => c.CarImage)
+            .AsNoTracking();
+            return View(await carAndImg.ToListAsync());
+
+            //return View(await _context.Cars.ToListAsync());
         }
         
        
@@ -40,22 +41,28 @@ namespace PipsiProject.Controllers
         // GET: CarModels/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            var carAndImg = _context.Cars
+           .Include(c => c.CarImage)
+           .AsNoTracking();
+           // return View(await carAndImg.ToListAsync());
+
             if (id == null)
             {
                 return NotFound();
             }
 
-            var carModel = await _context.Cars
+            var carDetails = await carAndImg
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (carModel == null)
+            if (carDetails == null)
             {
                 return NotFound();
             }
 
-            return View(carModel);
+            return View(carDetails);
         }
 
         // GET: CarModels/Create
+        
         public IActionResult Create()
         {
             return View();
@@ -71,21 +78,39 @@ namespace PipsiProject.Controllers
             if (ModelState.IsValid)
             {
                 //public async Task<IActionResult> Create([Bind("Id,Marka,Model,Klasa,PojSilnika,Przebieg,RokProd,Paliwo,Kolor,Cena,Opis,ImageTitle,ImageFile")] CarModel carModel)
-               
+
                 // zapisanie rekordów
-                               
+                //var carAndImg = _context.Cars
+                //.Include(c => c.CarImage)
+                //.AsNoTracking();
+
+                string wwwRootPath = _hostEnvironment.WebRootPath;
+                string fileName = Path.GetFileNameWithoutExtension(carModel.CarImage.ImageFile.FileName);
+                string extension = Path.GetExtension(carModel.CarImage.ImageFile.FileName);
+
+                carModel.CarImage.ImageName = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                string path = Path.Combine(wwwRootPath + "/images/carimg/", fileName);
+                using (var fileStream = new FileStream(path, FileMode.Create))
+                {
+                    await carModel.CarImage.ImageFile.CopyToAsync(fileStream);
+                }
+
                 _context.Add(carModel);
                 await _context.SaveChangesAsync();
+               
                 return RedirectToAction(nameof(Index));
             }
             return View(carModel);
         }
 
+
+
+       
+
+
         // GET: CarModels/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-
-           
 
             if (id == null)
             {

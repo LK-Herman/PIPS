@@ -6,6 +6,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using PipsiProject.Models;
+using System.Net.Mail;
+using System.Net;
 
 namespace PipsiProject.Controllers
 {
@@ -30,6 +32,51 @@ namespace PipsiProject.Controllers
 
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Kontakt(string receiver, string subject, string message, string formSender)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var senderEmail = new MailAddress("pipsitestemail@gmail.com", formSender);
+                    var receiverEmail = new MailAddress(receiver);
+                    var password = "pipsitestemail2020";
+                    var sub = subject;
+                    var body = message;
+                    var smtp = new SmtpClient
+                    {
+                        Host = "smtp.gmail.com",
+                        Port = 587,
+                        EnableSsl = true,
+                        DeliveryMethod = SmtpDeliveryMethod.Network,
+                        UseDefaultCredentials = false,
+                        Credentials = new NetworkCredential(senderEmail.Address, password)
+                    };
+                    using (var mess = new MailMessage(senderEmail, receiverEmail)
+                    {
+                        Subject = subject,
+                        Body = body
+                    })
+                    {
+                        smtp.Send(mess);
+                    }
+                    ViewBag.Error = "Dziękujemy. Wiadomość została wysłana.";
+                    return View();
+                }
+            }
+            catch (Exception)
+            {
+                ViewBag.Error = "Coś poszło nie tak... wiadomość nie została wysłana :(";
+            }
+            return View();
+        }
+
+
+
+
+
 
         public IActionResult Rejestracja()
         {

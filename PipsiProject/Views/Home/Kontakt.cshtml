@@ -1,17 +1,70 @@
 ﻿@{
-    ViewData["Title"] = "Contact";
+    ViewData["Title"] = "Kontakt";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<h3>@ViewData["Skontaktuj się z nami"]</h3>
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+@{
+    ViewBag.Title = "Kontakt";
+}
+<h2> Wyślij do nas wiadomość: </h2>
+<br /> <br />
+       <div class="row">
+           <div class="col-sm-6">
+               <form method="post"
+                     action="Kontakt">
+                   
+                       <span class="form-control-static"> Adres odbiorcy: </span>
+                       <input class="form-control" type="email" name="receiver" value="pipsitestemail@gmail.com" required /> <br />
+                       <span class="form-control-static"> Temat: </span>
+                       <input class="form-control" type="text" name="subject" required /> <br />
+                       <span class="form-control-static"> Wiadomość: </span>
+                       <textarea class="form-control" type="text" name="message" required rows="5"> </textarea> <br />
+                       <span class="form-control-static" placeholder="mojadres@adres.com"> Twój adres email: </span>
+                       <input class="form-control" type="email" name="formSender" required /> <br />
+
+                       <input class="btn form-control" style="margin:10px 0px; background-color:#3e3e3e; color:white " type="submit" value="Wyślij wiadomość" />
+                   
+               </form>
+           </div>
+
+           <div class="col-sm-1"></div>
+
+           <div class="">
+               <div class="col-sm-5 row">
+                   <img class="foto2 img-responsive center-block" src="~/images/logo.png" asp-append-version="true" style="max-width:400px;" />
+               </div>
+           </div>
+
+           <div class="row">
+               <div class="col-sm-1"></div>
+               <div class="col-sm-3 col-sm-offset-1">
+                   <address>
+                       <p><strong>Dane kontaktowe:</strong></p>
+                       <br />
+
+                       <h4>PIPSI Car Studio 2020</h4>
+                       59-220 Legnica<br />
+                       <abbr title="Telefon">Tel.:</abbr>
+                       +48 666555444
+                   </address>
+
+                   <address>
+                       <p>
+                           <strong>Adres email:</strong>
+                       </p>
+                       <p>
+                           <a href="mailto:pipsitestemail@gmail.com">pipsitestemail@gmail.com</a><br />
+                       </p>
+                   </address>
+               </div>
+               </div>
+           </div>
+       
+           <div class="col-sm-12 text-left">
+               @if (ViewBag.Error != null)
+               {<h2> @ViewBag.Error </h2>}
+
+
+           </div>
+       

@@ -2,27 +2,28 @@
     ViewData["Title"] = "PIPSIL";
 }
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000" >
-    <ol class="carousel-indicators" >
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
-    <div class="carousel-inner" role="listbox" >
-        <div class="item active" >
-            <img src="~/images/CarLux.jpg" alt="Luksusowe auta" class="img-responsive" />
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/images/logoRoad.jpg" alt="PIPSIL Car" class="img-responsive" />
             <div class="carousel-caption img-rounded" role="option" style="background: rgba(0, 0, 0, 0.4);">
-                
-                <p >Przestronne i wygodne wnętrza. Piękny design. </p>
+
+                <p>Projekt z przedmiotu: Projektowanie i Programowanie Systemów Internetowych. Wykonany przez Monikę, Konrada i Łukasza. </p>
                 <p>
-                    <a class="btn btn-success" asp-area="" asp-route-id="3" asp-controller="CarModels" asp-action="Index"> Klasa luksusowa </a>
+                    <a class="btn btn-success" asp-area="" asp-route-id="" asp-controller="CarModels" asp-action="Index"> Zobacz nasze auta </a>
                 </p>
             </div>
         </div>
         <div class="item">
-            <img src="~/images/CarSport.jpg" alt="Sportowe" class="img-responsive"  />
+            <img src="~/images/CarSport.jpg" alt="Sportowe" class="img-responsive" />
             <div class="carousel-caption img-rounded" role="option" style="background: rgba(0, 0, 0, 0.4);">
-                
+
                 <p>Jeżeli jesteś fanem szybkości...</p>
                 <p>
                     <a class="btn btn-success " asp-area="" asp-route-id="2" asp-controller="CarModels" asp-action="Index">
@@ -32,7 +33,7 @@
             </div>
         </div>
         <div class="item">
-            <img src="~/images/CarEcon.jpg" alt="Ekonomiczne" class="img-responsive"/>
+            <img src="~/images/CarEcon.jpg" alt="Ekonomiczne" class="img-responsive" />
             <div class="carousel-caption img-rounded" role="option" style="background: rgba(0, 0, 0, 0.4);">
                 <p>
                     Wycieczka z rodziną, wypad za miasto... Sprawdź naszą ofertę aut ekonomicznych.
@@ -44,6 +45,19 @@
                 </p>
             </div>
         </div>
+        <div class="item">
+            <img src="~/images/CarLux.jpg" alt="Luksusowe auta" class="img-responsive" />
+            <div class="carousel-caption img-rounded" role="option" style="background: rgba(0, 0, 0, 0.4);">
+
+                <p>Przestronne i wygodne wnętrza. Piękny design. </p>
+                <p>
+                    <a class="btn btn-success" asp-area="" asp-route-id="3" asp-controller="CarModels" asp-action="Index"> Klasa luksusowa </a>
+                </p>
+            </div>
+        </div>
+
+
+
     </div>
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -59,50 +73,80 @@
 
 
     @*<main>*@
-    <div class="col-lg-12" >
-        <p class=" text-center " >
-            <h3 class="text-center " style="margin:5% 5% ">
+    <div class="foto3 col-sm-12">
+        @*<p>
+            <img class="foto2 img-responsive center-block" src="~/images/logo.png" asp-append-version="true" style="max-width:500px;" />
+
+        </p>*@
+        <p>
+            <h3 class="text-center " style="margin:3% 5% 1% 5%">
                 Najlepsza wypożyczalnia samochodów w Polsce! Minimum formalności maksimum satysfakcji!
                 <span>Wyróżnia nas : </span>
+                <br />
             </h3>
-            
         </p>
-        <div class="col-lg-12">
-            
-                <div class="col-lg-4 " >
-                    <img class="img-responsive center-block" src="~/images/NoLimits.jpg" asp-append-version="true" style="height:inherit;"  />
-                    <h4>Brak limitu kilometrów!</h4>
-                </div>
+        <div class="foto2 col-sm-4 text-center">
 
-                <div class="col-lg-4 " >
-                    <img class="img-responsive center-block" src="~/images/Promo.jpg" asp-append-version="true"  style="height:inherit;"/>
-                    <h4>Promocyjne ceny!</h4>
-                </div>
+            <h3>Brak limitu kilometrów!</h3>
+        </div>
 
-                <div class="col-lg-4 ">
-                    <img class="img-responsive center-block" src="~/images/Formal.jpg" asp-append-version="true"  style="height:inherit;"/>
-                    <h4>Minimum formalności!</h4>
-                </div>
-                        
+        <div class="foto2 col-sm-4 text-center">
+
+            <h3>Promocyjne ceny!</h3>
         </div>
+
+        <div class="foto2 col-sm-4 text-center">
+
+            <h3>Minimum formalności!</h3>
         </div>
+
+
+        <div class="col-sm-4 text-left">
+            <p>Korzystając z naszej oferty, nie ogranicza Cię limit kilometrów. </p>
+            <p>Możesz wybrać się w najdalsze zakątki świata. Podróżuj ile tylko chcesz i jak długo chcesz.</p>
+        </div>
+        <div class="col-sm-4 text-left">
+            <p>
+                Dummy text used in laying out print,
+                graphic or web designs. The passage is attributed to an unknown typesetter in the 15th
+            </p>
+            <p>century who is thought to have scrambled parts of Cicero's De Finibus for use in a type specimen book.</p>
+
+        </div>
+        <div class="col-sm-4 text-left">
+            <p>
+                Chcemy jak najszybciej umożliwić Ci korzystanie z naszych aut,
+                więc dokładamy wszelkich starań, aby formalności zajmowały jak najmniej czasu.
+                Nasze procedury są proste i przejrzyste.
+
+            </p>
+        </div>
+
+        <p><br /></p>
+        <p class=" text-center ">
+            <div class="foto2 col-sm-12">
+                <img class="foto2 img-responsive center-block" src="~/images/fotki3.jpg" asp-append-version="true" />
+
+
+            </div>
+    </div>
     @*</main>*@
 
     @*<section class="contact">
-        <p>Skontaktuj się z nami:</p>
-        <ul class="clearfix">
-            <li>
-                <a href="#">
-                    <i class="far fa-envelope"></i>@@domena.pl
-                </a>
-            </li>
-            <li><a href="#"><i class="fas fa-phone-volume"></i>+48530625987</a></li>
-            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></i>fecebook.pl</a></li>
-            <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></i>twitter.com</a></li>
-            <li><a href="https://pl.linkedin.com/"><i class="fab fa-linkedin-in"></i>linkedin.com</a></li>
-        </ul>
+            <p>Skontaktuj się z nami:</p>
+            <ul class="clearfix">
+                <li>
+                    <a href="#">
+                        <i class="far fa-envelope"></i>@@domena.pl
+                    </a>
+                </li>
+                <li><a href="#"><i class="fas fa-phone-volume"></i>+48530625987</a></li>
+                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></i>fecebook.pl</a></li>
+                <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></i>twitter.com</a></li>
+                <li><a href="https://pl.linkedin.com/"><i class="fab fa-linkedin-in"></i>linkedin.com</a></li>
+            </ul>
 
-    </section>*@
+        </section>*@
 
 
 

@@ -10,8 +10,8 @@
 <div>
     
     <hr />
-    <div class="row col-lg-12 ">
-        <div class="col-lg-4 text-left">
+    <div class="row col-sm-12 ">
+        <div class="col-sm-4 text-left">
             <dl class="">
                 <dt>
                     @Html.DisplayNameFor(model => model.Id)
@@ -81,7 +81,7 @@
                 </dd>
             </dl>
         </div>
-        <div class="col-lg-6">
+        <div class="col-sm-6">
             <p>
                 <img class="img-rounded img-responsive" src="@("~/images/carimg/"+ Model.CarImage.ImageName)" asp-append-version="true" width="450" height="350" />
             </p>
@@ -104,7 +104,7 @@
             </p>
 
         </div>
-        <div class="col-lg-2 ">
+        <div class="col-sm-2 ">
 
             <form class="btn-group-vertical" asp-action="Delete">
                 <input type="hidden" asp-for="Id" />

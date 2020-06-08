@@ -35,3 +35,22 @@ body {
         display: none;
     }
 }
+
+div.foto2 {
+    margin:15px 0 15px 0;
+    padding:5px;
+    color:#e5e5e5;
+    resize:both;
+    background-color:#696969;
+    vertical-align:central;
+    
+}
+
+div.foto3 {
+    margin: 0 15px 0 15px;
+    width: auto;
+    padding: 0;
+    
+    
+    
+}

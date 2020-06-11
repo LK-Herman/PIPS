@@ -1,0 +1,48 @@
+﻿
+<br /> <br />
+<div class="row">
+    <div class="col-sm-6">
+        <h4>@ViewData["Message"]</h4>
+        <h4>Dziękujemy :)</h4>
+
+        <form method="post"
+              action="LogBehind">
+
+            <p></p>
+            <a class="btn " asp-area="" asp-controller="Home" asp-action="Index" style="margin:10px 0px; background-color:#3e3e3e; color:white ">
+                Przejdź do strony głównej
+            </a>
+            @*<input class="btn form-control" style="margin:10px 0px; background-color:#3e3e3e; color:white " type="submit" value=" Przejdź do strony głównej" />*@
+
+        </form>
+    </div>
+
+    <div class="col-sm-1"></div>
+
+    <div class="">
+        <div class="col-sm-6 row">
+            <img class="foto2 img-responsive center-block" src="~/images/logo.png" asp-append-version="true" style="max-width:400px;" />
+        </div>
+    </div>
+
+
+</div>
+
+<div class="col-sm-12 text-left">
+    @if (ViewBag.Message != null)
+    {<h4> @ViewBag.ViewMessage </h4>}
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<h2>@ViewBag.Result</h2>
+

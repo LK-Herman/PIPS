@@ -57,7 +57,7 @@ using PipsiProject.Models;
             WriteLiteral("\r\n<p>\r\n    ");
             EndContext();
             BeginContext(63, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "34e015aed42b43ea95b4e65c3840c459", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3901c6a0b6d842c984429b98f1c1c6fe", async() => {
                 BeginContext(86, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -127,7 +127,7 @@ using PipsiProject.Models;
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(707, 58, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b18afac4fd446bb8fc144cd5df09255", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b7d74c3e834c4ce896a94b16f6fa9621", async() => {
                 BeginContext(757, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -162,7 +162,7 @@ using PipsiProject.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(785, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "566e1736860d438e9c6b62f97ede6eed", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c3c19f1cf0348e4b5ef3937474b6c55", async() => {
                 BeginContext(838, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -197,7 +197,7 @@ using PipsiProject.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(869, 62, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1b3dc559d8294015b7806ed71b7a9bfc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88581f1c5657409bae939d397f68961e", async() => {
                 BeginContext(921, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

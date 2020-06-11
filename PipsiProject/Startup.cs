@@ -26,6 +26,17 @@ namespace PipsiProject
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddIdentity<UserModel, UserRole>(options =>
+            {
+                options.User.RequireUniqueEmail = true;
+                options.Password.RequiredLength = 4;
+                options.Password.RequireDigit = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+            }).AddEntityFrameworkStores<IdentityAppContext>();
+               
+
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -33,7 +44,12 @@ namespace PipsiProject
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DbConnS")));
+            services.AddDbContext<AppDbContext>(options => options
+                .UseSqlServer(Configuration.GetConnectionString("DbConnS")));
+
+            services.AddDbContext<IdentityAppContext>(cfg => cfg
+                .UseSqlServer(Configuration.GetConnectionString("DbConnS")));
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -53,6 +69,8 @@ namespace PipsiProject
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+
+            app.UseAuthentication();
 
             app.UseMvc(routes =>
             {

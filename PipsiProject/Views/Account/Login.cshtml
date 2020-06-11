@@ -1,0 +1,44 @@
+﻿
+<br />
+<h4>@ViewData["Message"]</h4>
+<h2>@ViewBag.Message2</h2>
+
+<br /> <br />
+<div class="row">
+    <div class="col-sm-5">
+        <form method="post"
+              action="Login">
+            <span class="form-control-static"> Nazwa użytkownika:</span>
+            <input class="form-control" type="text" name="uName" value="@ViewBag.Name" required /> <br />
+            <span class="form-control-static">Hasło:</span>
+            <input class="form-control" type="password" name="uPass" value="@ViewBag.Pass" required /> <br />
+
+            <input class="btn form-control" style="margin:10px 0px; background-color:#3e3e3e; color:white " type="submit" value="Zaloguj" />
+        </form>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="">
+        <div class="col-sm-6 row">
+            <img class="foto2 img-responsive center-block" src="~/images/logo.png" asp-append-version="true" style="max-width:400px;" />
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 text-left">
+    @if (ViewBag.Message != null)
+    {<h4> @ViewBag.ViewMessage </h4>}
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<h2>@ViewBag.Result</h2>
+

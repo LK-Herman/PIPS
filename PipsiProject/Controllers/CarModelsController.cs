@@ -56,9 +56,7 @@ namespace PipsiProject.Controllers
                     case 3:
                         klasa = "Luksusowa";
                         break;
-                   
                 }
-
 
                 carAndImg = _context.Cars
                 .Include(c => c.CarImage)
@@ -68,12 +66,10 @@ namespace PipsiProject.Controllers
             }
             else
             {
-
                 return View(await carAndImg.ToListAsync());
                 //return View(await _context.Cars.ToListAsync());
             }
         }
-
 
         public async Task<IActionResult> IndexEko()
         {
@@ -87,9 +83,7 @@ namespace PipsiProject.Controllers
             //return View(await _context.Cars.ToListAsync());
         }
 
-
-
-        // GET: CarModels/Details/5
+        // --------------------------------GET------------------------
         public async Task<IActionResult> Details(int? id)
         {
             var carAndImg = await _context.Cars
@@ -102,12 +96,10 @@ namespace PipsiProject.Controllers
             {
                 return NotFound();
             }
-
             if (carAndImg == null)
             {
                 return NotFound();
             }
-
             return View(carAndImg);
         }
 
@@ -127,12 +119,6 @@ namespace PipsiProject.Controllers
         {
             if (ModelState.IsValid)
             {
-                //public async Task<IActionResult> Create([Bind("Id,Marka,Model,Klasa,PojSilnika,Przebieg,RokProd,Paliwo,Kolor,Cena,Opis,ImageTitle,ImageFile")] CarModel carModel)
-
-                // zapisanie rekordów
-                //var carAndImg = _context.Cars
-                //.Include(c => c.CarImage)
-                //.AsNoTracking();
 
                 string wwwRootPath = _hostEnvironment.WebRootPath;
                 string fileName = Path.GetFileNameWithoutExtension(carModel.CarImage.ImageFile.FileName);
@@ -154,11 +140,6 @@ namespace PipsiProject.Controllers
         }
 
 
-
-
-
-
-        // GET: CarModels/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
 
@@ -175,9 +156,7 @@ namespace PipsiProject.Controllers
             return View(carModel);
         }
 
-        // POST: CarModels/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Marka,Model,Klasa,PojSilnika,Przebieg,RokProd,Paliwo,Kolor,Cena,Opis,Carimg")] CarModel carModel)
@@ -191,9 +170,6 @@ namespace PipsiProject.Controllers
             {
                 try
                 {
-                    // public async Task<IActionResult> Edit(int id, [Bind("Id,Marka,Model,Klasa,PojSilnika,Przebieg,RokProd,Paliwo,Kolor,Cena,Opis,ImageTitle,ImageFile")] CarModel carModel)
-
-
                     _context.UpdateRange(carModel);      // *********** zmiana z Update na UpdateRange
                     await _context.SaveChangesAsync();
                 }
@@ -213,7 +189,7 @@ namespace PipsiProject.Controllers
             return View(carModel);
         }
 
-        // GET: CarModels/Delete/5
+//---------------DELETE--------------------------------------------------------------------------------------------
         public async Task<IActionResult> Delete(int? id)
         {
             var carModel = await _context.Cars
@@ -261,8 +237,6 @@ namespace PipsiProject.Controllers
         {
             return _context.Cars.Any(e => e.Id == id);
         }
-
-
 
         public ActionResult Display()
         {

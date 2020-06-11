@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Rejestracja użytkownika";
+}
+@model PipsiProject.Models.UserModel
+
+<h2>@ViewData["Title"]</h2>
+
+<br /> <br />
+<div class="row">
+    <div class="col-sm-5">
+        <form method="post"
+              action="Register">
+
+            <span class="form-control-static"> Nazwa użytkownika:</span>
+            <input class="form-control" type="text" name="uName" required /> <br />
+            <span class="form-control-static">Hasło:</span>
+            <input class="form-control" type="password" name="uPass" required /> <br />
+            <span class="form-control-static">Adres email:</span>
+            <input class="form-control" type="email" name="uMail" required><br />
+            <span class="form-control-static"> Imię: </span>
+            <input class="form-control" type="text" name="fName" required /> <br />
+            <span class="form-control-static"> Nazwisko: </span>
+            <input class="form-control" type="text" name="lName" required /> <br />
+
+            <input class="btn form-control" style="margin:10px 0px; background-color:#3e3e3e; color:white " type="submit" value="Rejestruj" />
+
+        </form>
+    </div>
+
+    <div class="col-sm-1"></div>
+
+    <div class="">
+        <div class="col-sm-6 row">
+            <img class="foto2 img-responsive center-block" src="~/images/logo.png" asp-append-version="true" style="max-width:400px;" />
+        </div>
+        <div class="col-sm-6">
+            @*<form method="get" action="Register(id)">
+                <input accept="id" value="id" name="id" />
+            </form>
+            <a class="btn " asp-route-id="Id" asp-area="" asp-controller="Account" asp-action="Login" style="margin:10px 0px; background-color:#3e3e3e; color:white "> Zaloguj się</a>*@
+        </div>
+    </div>
+
+
+</div>
+
+<div class="col-sm-12 text-left">
+    @if (ViewBag.Message != null)
+    {<h2> @ViewBag.Message </h2>}
+
+
+</div>
+
+
+
+<h2>@ViewBag.Result</h2>
+
+
+
+
+

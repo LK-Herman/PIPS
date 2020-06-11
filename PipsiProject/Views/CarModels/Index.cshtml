@@ -10,9 +10,9 @@
 
 <div class="row">
 
-    <div class="col-lg-3">
+    <div class="col-sm-3">
 
-    </div><!-- /.col-lg-6 -->
+    </div><!-- /.col-sm-6 -->
 
 
 
@@ -43,12 +43,12 @@
     </div>
     
 
-    <form class="navbar-form navbar-left form-group" type="search" role="search">
+    @*<form class="navbar-form navbar-left form-group" type="search" role="search">
         <div class="form-group">
            <input asp-action="Index" type="text" class="form-control" placeholder="Szukaj...">
         </div>
         <button type="submit" value="submit" class="btn btn-default">Szukaj</button>
-    </form>
+    </form>*@
 
 </nav>
 
@@ -66,17 +66,17 @@
 
            //var newDate = item.RokProd.ToShortDateString();
             var newDate = item.RokProd.Year.ToString();
-        <tr class="row col-lg-12" style="vertical-align: middle; text-align: left">
+        <tr class="row col-sm-12" style="vertical-align: middle; text-align: left">
 
-            <td class="col-lg-4" style="vertical-align: middle">
+            <td class="col-sm-5 img-responsive" style="vertical-align: middle">
                 <a asp-action="Details" asp-route-id="@item.Id">
-                   
-                    <img class="img-rounded img-responsive" src="@("~/images/carimg/"+ item.CarImage.ImageName)" asp-append-version="true" width="350" height="250" />
-                   
+
+                    <img class="img-rounded img-responsive" src="@("~/images/carimg/"+ item.CarImage.ImageName)" asp-append-version="true" />
+                    @*width="350" height="250"*@
                 </a>
             </td>
         
-            <td class="col-lg-3" style="vertical-align: middle">
+            <td class="col-sm-3" style="vertical-align: middle">
                 <p>
                     <h3 class="text-capitalize" style="color:#01791d;">@Html.DisplayFor(modelItem => item.Marka) @Html.DisplayFor(modelItem => item.Model)</h3>
                 <p> <label>@Html.DisplayNameFor(modelItem => item.Klasa)</label>:  @Html.DisplayFor(modelItem => item.Klasa) </p>
@@ -85,7 +85,7 @@
                 <p> <label>@Html.DisplayNameFor(modelItem => item.RokProd)</label>:  @newDate</p>
             </td>
 
-            <td class="col-lg-4" style="text-align:center; vertical-align: middle">
+            <td class="col-sm-3" style="text-align:center; vertical-align: middle">
                 <div class="img-rounded">
                     <p style="font-size: 40px; color:orange; font-family:'Century Gothic'">@Html.DisplayFor(modelItem => item.Cena) </p>
                     <p style="color: dimgray; font-size:16px ">PLN za dzień</p>
@@ -97,7 +97,7 @@
             </td>
 
 
-            <td class="col-lg-1" style="vertical-align:middle">
+            <td class="col-sm-1" style="vertical-align:middle">
                 <ul class="media-list btn-group-vertical">
                     <li><a class="btn  btn-block " style="margin:10px 0px; background-color:#3e3e3e; color:white " asp-action="Edit" asp-route-id="@item.Id">Edytuj</a></li>
                     <li><a class="btn  btn-block " style="margin:10px 0px; background-color:#3e3e3e; color:white " asp-action="Details" asp-route-id="@item.Id">Szczegóły</a></li>

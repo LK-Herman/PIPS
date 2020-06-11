@@ -30,7 +30,7 @@ namespace PipsiProject.Models
 
      //   [MaxLength(6)]
         [DisplayName("Przebieg (km)")]
-        [Range(1000, 999999, ErrorMessage ="Msisz wprowadzić prawidłowy przebieg w km")]
+        [Range(1000, 999999, ErrorMessage ="Wprowadź prawidłowy przebieg w km")]
         public double Przebieg { get; set; }
 
         [DisplayName("Rok produkcji")]

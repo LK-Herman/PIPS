@@ -35,6 +35,53 @@ namespace PipsiProject.Controllers
 
         [HttpPost]
         public ActionResult Kontakt(string receiver, string subject, string message, string formSender)
+<<<<<<< HEAD
+=======
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var senderEmail = new MailAddress("pipsitestemail@gmail.com", formSender);
+                    var receiverEmail = new MailAddress(receiver);
+                    var password = "pipsitestemail2020";
+                    var sub = subject;
+                    var body = message;
+                    var smtp = new SmtpClient
+                    {
+                        Host = "smtp.gmail.com",
+                        Port = 587,
+                        EnableSsl = true,
+                        DeliveryMethod = SmtpDeliveryMethod.Network,
+                        UseDefaultCredentials = false,
+                        Credentials = new NetworkCredential(senderEmail.Address, password)
+                    };
+                    using (var mess = new MailMessage(senderEmail, receiverEmail)
+                    {
+                        Subject = subject,
+                        Body = body
+                    })
+                    {
+                        smtp.Send(mess);
+                    }
+                    ViewBag.Error = "Dziękujemy. Wiadomość została wysłana.";
+                    return View();
+                }
+            }
+            catch (Exception)
+            {
+                ViewBag.Error = "Coś poszło nie tak... wiadomość nie została wysłana :(";
+            }
+            return View();
+        }
+
+
+
+
+
+
+        public IActionResult Rejestracja()
+>>>>>>> c0f44f009dc2e6062642652584a60eb8e628db24
         {
             try
             {

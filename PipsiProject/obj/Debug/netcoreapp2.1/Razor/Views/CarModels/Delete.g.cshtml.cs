@@ -305,7 +305,11 @@ using PipsiProject.Models;
             WriteLiteral("\r\n                </dd>\r\n            </dl>\r\n        </div>\r\n        <div class=\"col-sm-6\">\r\n            <p>\r\n                ");
             EndContext();
             BeginContext(2813, 147, false);
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "4c9484b9ae29435fb8f543edbce4fe7e", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a78abcf80d09422b9d60d11abd52842f", async() => {
+>>>>>>> c0f44f009dc2e6062642652584a60eb8e628db24
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.ImageTagHelper>();
@@ -370,12 +374,20 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper.AppendVersion = true;
             WriteLiteral("\r\n                    </dd>\r\n                </dl>\r\n            </p>\r\n\r\n        </div>\r\n        <div class=\"col-sm-2 \">\r\n\r\n            ");
             EndContext();
             BeginContext(3640, 308, false);
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "de4e04eafcb74ae58ee163394ed744a0", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6696e0fa3e094675915786e2bcb7a7c0", async() => {
+>>>>>>> c0f44f009dc2e6062642652584a60eb8e628db24
                 BeginContext(3693, 18, true);
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(3711, 36, false);
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "8300fba97caf43d7af9910ec5d047f70", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "fa45af01d9fa409aa5ff4f80bc3e007c", async() => {
+>>>>>>> c0f44f009dc2e6062642652584a60eb8e628db24
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -400,7 +412,11 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\r\n                <input type=\"submit\" value=\"Usuń auto\" class=\"btn btn-danger\" />\r\n                <br />\r\n                ");
                 EndContext();
                 BeginContext(3871, 56, false);
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ca7cecca9c884889869fa291bdba55fe", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "68d3be17b0624097bfdff8a571f81e97", async() => {
+>>>>>>> c0f44f009dc2e6062642652584a60eb8e628db24
                     BeginContext(3917, 6, true);
                     WriteLiteral("Powrót");
                     EndContext();

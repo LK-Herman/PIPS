@@ -102,11 +102,7 @@ using PipsiProject.Models;
             WriteLiteral("</span>\r\n                    </h2>\r\n                </div>\r\n                <div class=\"col-sm-4\">\r\n                    ");
             EndContext();
             BeginContext(606, 155, false);
-<<<<<<< HEAD
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "95e3daa99aa44cbc8c6a88fc9a2d341a", async() => {
-=======
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "fac2bbacf3414c09be0dc6705812ee1d", async() => {
->>>>>>> c0f44f009dc2e6062642652584a60eb8e628db24
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0e8dde5f357d4dd29c47069a9e84809e", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.ImageTagHelper>();
@@ -165,11 +161,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper.AppendVersion = true;
                         <li>");
             EndContext();
             BeginContext(1412, 144, false);
-<<<<<<< HEAD
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4f663536e3ab4a7580ca60f4702f874b", async() => {
-=======
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e25203448e1454ab351ea9288e59701", async() => {
->>>>>>> c0f44f009dc2e6062642652584a60eb8e628db24
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b5db52e04c684944b278793be0d96724", async() => {
                 BeginContext(1546, 6, true);
                 WriteLiteral("Edytuj");
                 EndContext();
@@ -206,11 +198,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper.AppendVersion = true;
             WriteLiteral("</li>\r\n                        <li>");
             EndContext();
             BeginContext(1591, 143, false);
-<<<<<<< HEAD
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3d88bb9c7504fa88c1d0c7f4a6d8903", async() => {
-=======
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19bedf7b13394fb09478c30d5d418b6c", async() => {
->>>>>>> c0f44f009dc2e6062642652584a60eb8e628db24
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5e739947b0ef46c19e1d89f7b165e9cb", async() => {
                 BeginContext(1726, 4, true);
                 WriteLiteral("Usuń");
                 EndContext();
@@ -247,11 +235,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper.AppendVersion = true;
             WriteLiteral("</li>\r\n                        <li><br /></li>\r\n                        <li>");
             EndContext();
             BeginContext(1810, 119, false);
-<<<<<<< HEAD
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "252e83ba48bb46778aeec61f8e931ccb", async() => {
-=======
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8f667a071b8442ae9edd92805258bb16", async() => {
->>>>>>> c0f44f009dc2e6062642652584a60eb8e628db24
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7cfa037bacf34e1e9731874569ec1f29", async() => {
                 BeginContext(1919, 6, true);
                 WriteLiteral("Powrót");
                 EndContext();

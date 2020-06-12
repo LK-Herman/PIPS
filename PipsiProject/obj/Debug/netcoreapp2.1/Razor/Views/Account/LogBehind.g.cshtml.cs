@@ -77,12 +77,12 @@ using PipsiProject.Models;
             WriteLiteral("</h4>\r\n        <h4>Dziękujemy :)</h4>\r\n\r\n        ");
             EndContext();
             BeginContext(145, 469, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0be44449dd8642d79162dc02a19cfd39", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c31dcda575b444892be565227267966", async() => {
                 BeginContext(199, 37, true);
                 WriteLiteral("\r\n\r\n            <p></p>\r\n            ");
                 EndContext();
                 BeginContext(236, 194, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7e35ab668478446694b92c1d41354fbd", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3a867f0a69214991831dcc8dcad9893b", async() => {
                     BeginContext(369, 57, true);
                     WriteLiteral("\r\n                Przejdź do strony głównej\r\n            ");
                     EndContext();
@@ -133,7 +133,7 @@ using PipsiProject.Models;
             WriteLiteral("\r\n    </div>\r\n\r\n    <div class=\"col-sm-1\"></div>\r\n\r\n    <div class=\"\">\r\n        <div class=\"col-sm-6 row\">\r\n            ");
             EndContext();
             BeginContext(734, 124, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0f85856bb61346c7ad0b6e0918f7e071", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "9bbe6855cd7143aab3469fe0fdd51e77", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

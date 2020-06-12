@@ -71,26 +71,27 @@ namespace PipsiProject.Controllers
             }
         }
 
-        public async Task<IActionResult> IndexEko()
-        {
-            var carAndImg = _context.Cars
-            .Include(c => c.CarImage)
-            .Where(c => c.Klasa == "Ekonomiczna")
-            .AsNoTracking();
+        //public async Task<IActionResult> IndexEko()
+        //{
+        //    var carAndImg = _context.Cars
+        //    .Include(c => c.CarImage)
+        //    .Where(c => c.Klasa == "Ekonomiczna")
+        //    .AsNoTracking();
 
-            return View(await carAndImg.ToListAsync());
+        //    return View(await carAndImg.ToListAsync());
 
             //return View(await _context.Cars.ToListAsync());
-        }
+        //}
 
-        // --------------------------------GET------------------------
+
+ //-----------------------DETAILS---GET-----------------------------------------
         public async Task<IActionResult> Details(int? id)
         {
             var carAndImg = await _context.Cars
            .Include(c => c.CarImage)
            .AsNoTracking()
            .FirstOrDefaultAsync(m => m.Id == id);
-            // return View(await carAndImg.ToListAsync());
+                                                                                              // return View(await carAndImg.ToListAsync());
 
             if (id == null)
             {

@@ -22,13 +22,13 @@ namespace PipsiProject.Models
 
         public string Klasa { get; set; }
         [DisplayName("Pojemność skokowa (cm3)")]
-        //[RegularExpression(@"^[0-9]""'\s-]*$")]     // ogranicza wprowadzanie znaków - sprawdz pozniej
-        //   [MaxLength(4)]
+                                                                                                    //[RegularExpression(@"^[0-9]""'\s-]*$")]     // ogranicza wprowadzanie znaków - sprawdz pozniej
+                                                                                                    //   [MaxLength(4)]
 
         [Range(1000, 9999, ErrorMessage ="Wprowadź pojemność silnika w cm3")]
         public int PojSilnika { get; set; }
 
-     //   [MaxLength(6)]
+        //[MaxLength(6)]
         [DisplayName("Przebieg (km)")]
         [Range(1000, 999999, ErrorMessage ="Wprowadź prawidłowy przebieg w km")]
         public double Przebieg { get; set; }

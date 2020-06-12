@@ -86,7 +86,7 @@ Write(ViewData["Skontaktuj się z nami"]);
             WriteLiteral("<h2> Wyślij do nas wiadomość: </h2>\r\n<br /> <br />\r\n       <div class=\"row\">\r\n           <div class=\"col-sm-6\">\r\n               ");
             EndContext();
             BeginContext(259, 1095, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc414250cd6540c1a918e0cd54dd1b8a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a3a5474e08a41b7a2cbb31dd410a498", async() => {
                 BeginContext(318, 1029, true);
                 WriteLiteral(@"
                    
@@ -125,7 +125,7 @@ Write(ViewData["Skontaktuj się z nami"]);
             WriteLiteral("\r\n           </div>\r\n\r\n           <div class=\"col-sm-1\"></div>\r\n\r\n           <div class=\"\">\r\n               <div class=\"col-sm-5 row\">\r\n                   ");
             EndContext();
             BeginContext(1509, 124, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "337c650a9f9d420cb5df0073ad29e716", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b1201f02f1414e8fb14a30c8b86ca1c3", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

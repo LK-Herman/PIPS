@@ -147,16 +147,14 @@ namespace PipsiProject.Controllers
                         await UserMgr.AddToRoleAsync(user, roleNameB);   // ustawienie roli jako użytkownik (nie admin)
                         
                         ViewBag.Message2 = " Zaloguj się:";
-                        ViewBag.Name = uName;
-                        ViewBag.Pass = uPass;
+                        //ViewBag.Name = uName;                NIEBEZPIECZNE - przekazanie danych do formularza
+                        //ViewBag.Pass = uPass;
                     }
                     else
                     {
                         ViewBag.Message = "Użytkownik nie został zarejestrowany: " + result.Errors.ToString();
                     }
-
                     user = await UserMgr.FindByNameAsync(uName);
-
                     return RedirectToAction("LogBehind","Account", user);     //RedirectToAction("Login", "Account", user.Id);
                     
                 }

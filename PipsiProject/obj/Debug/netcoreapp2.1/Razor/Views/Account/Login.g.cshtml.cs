@@ -81,7 +81,7 @@ Write(ViewBag.Message2);
             WriteLiteral("</h2>\r\n\r\n<br /> <br />\r\n<div class=\"row\">\r\n    <div class=\"col-sm-5\">\r\n        ");
             EndContext();
             BeginContext(141, 564, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6d00a94c4a3c4e0e90ad7852d609014c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "824675e3c7d948bba9819d4dd13460c0", async() => {
                 BeginContext(191, 140, true);
                 WriteLiteral("\r\n            <span class=\"form-control-static\"> Nazwa użytkownika:</span>\r\n            <input class=\"form-control\" type=\"text\" name=\"uName\"");
                 EndContext();
@@ -126,7 +126,7 @@ WriteAttributeValue("", 511, ViewBag.Pass, 511, 13, false);
             WriteLiteral("\r\n    </div>\r\n    <div class=\"col-sm-1\"></div>\r\n    <div class=\"\">\r\n        <div class=\"col-sm-6 row\">\r\n            ");
             EndContext();
             BeginContext(821, 124, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d53f2d315dec42098450fce39837a0df", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "90e43ffc9a3f4d5ebabfd324f23e4903", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

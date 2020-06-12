@@ -78,7 +78,7 @@ using PipsiProject.Models;
             WriteLiteral("\r\n<h1 class=\"page-header\">Flota samochodów</h1>\r\n<br />\r\n\r\n\r\n<div class=\"row\">\r\n\r\n    <div class=\"col-sm-3\">\r\n\r\n    </div><!-- /.col-sm-6 -->\r\n\r\n\r\n\r\n</div><!-- /.row -->\r\n\r\n<nav class=\"navbar container-fluid\" padding:0;\">\r\n\r\n    ");
             EndContext();
             BeginContext(326, 238, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9d5151dc36a74730a90ed33c39fe0f84", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "64ddb29821824616b901ef389075bbab", async() => {
                 BeginContext(459, 101, true);
                 WriteLiteral("\r\n        <span class=\"glyphicon glyphicon-plus\"></span> \r\n        <span> Dodaj samochód</span>\r\n    ");
                 EndContext();
@@ -112,7 +112,7 @@ using PipsiProject.Models;
             <li>");
             EndContext();
             BeginContext(980, 51, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a2d6b01404784dd8b64dc2ce7668ba2b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ee5f1543e0c242328c3841cf76998280", async() => {
                 BeginContext(1018, 9, true);
                 WriteLiteral("Wszystkie");
                 EndContext();
@@ -140,7 +140,7 @@ using PipsiProject.Models;
             WriteLiteral("</li>\r\n            <li><hr style=\"margin: 2px\" /></li>\r\n            <li>");
             EndContext();
             BeginContext(1103, 54, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "90cab48915e64f208c1dfd109fcf86ce", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e34a7c5b3e6d4440a9e63f380e054041", async() => {
                 BeginContext(1142, 11, true);
                 WriteLiteral("Ekonomiczna");
                 EndContext();
@@ -168,7 +168,7 @@ using PipsiProject.Models;
             WriteLiteral("</li>\r\n            <li>");
             EndContext();
             BeginContext(1180, 51, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b94a4b04da7943edada48b43e3919163", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c947f6f77e244d8cb13738b9acb28277", async() => {
                 BeginContext(1219, 8, true);
                 WriteLiteral("Sportowa");
                 EndContext();
@@ -196,7 +196,7 @@ using PipsiProject.Models;
             WriteLiteral("</li>\r\n            <li>");
             EndContext();
             BeginContext(1254, 52, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "616a77404b324701a4eea1002b52ad70", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9163a008342347bca6d827bc7045879f", async() => {
                 BeginContext(1293, 9, true);
                 WriteLiteral("Luksusowa");
                 EndContext();
@@ -239,12 +239,12 @@ using PipsiProject.Models;
             WriteLiteral("        <tr class=\"row col-sm-12\" style=\"vertical-align: middle; text-align: left\">\r\n\r\n            <td class=\"col-sm-5 img-responsive\" style=\"vertical-align: middle\">\r\n                ");
             EndContext();
             BeginContext(2166, 265, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5ab2c8e8730b407ea722b5b72aab0102", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f3acb813bf724d7e89a80791a19fedcb", async() => {
                 BeginContext(2214, 24, true);
                 WriteLiteral("\r\n\r\n                    ");
                 EndContext();
                 BeginContext(2238, 121, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a7dc0670ba064df0b1d4f72fb5bf4db5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0cf0c21e08c84b668fdd47e8d3b674ec", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.ImageTagHelper>();
@@ -430,7 +430,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper.AppendVersion = true;
             WriteLiteral("\r\n                    </p>\r\n                </div>\r\n\r\n            </td>\r\n\r\n\r\n            <td class=\"col-sm-1\" style=\"vertical-align:middle\">\r\n                <ul class=\"media-list btn-group-vertical\">\r\n                    <li>");
             EndContext();
             BeginContext(3991, 143, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a382475bcae48b6b3e21403a0fdefd4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a92ceb0b7f884c86909143904f4a0a83", async() => {
                 BeginContext(4124, 6, true);
                 WriteLiteral("Edytuj");
                 EndContext();
@@ -467,7 +467,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper.AppendVersion = true;
             WriteLiteral("</li>\r\n                    <li>");
             EndContext();
             BeginContext(4165, 149, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f20d4aa1c5cc41a8842ada266336da75", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c03e9bb88594471db40afac42a30897a", async() => {
                 BeginContext(4301, 9, true);
                 WriteLiteral("Szczegóły");
                 EndContext();
@@ -504,7 +504,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper.AppendVersion = true;
             WriteLiteral("</li>\r\n                    <li>");
             EndContext();
             BeginContext(4345, 142, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0696bd5ce10942488c29eb8de44d4f3e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e28834399392431392cb13cddca86eca", async() => {
                 BeginContext(4479, 4, true);
                 WriteLiteral("Usuń");
                 EndContext();

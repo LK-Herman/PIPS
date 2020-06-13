@@ -11,12 +11,11 @@
         <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed:400,700&display=swap&subset=latin-ext"
               rel="stylesheet">
         <script src="https://kit.fontawesome.com/c0ecb9f799.js" crossorigin="anonymous"></script>
-      
+
+
         
-        <link rel="stylesheet" href="~/css/Konrad/styleMain.css">
-        <link rel="stylesheet" href="~/css/Konrad/styleContact.css">
-        <link rel="stylesheet" href="~/css/Konrad/styleMe.css">
-       
+        <link rel="stylesheet" href="~/css/Konrad/stylik.css">
+
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -26,12 +25,10 @@
         <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed:400,700&display=swap&subset=latin-ext"
               rel="stylesheet">
         <script src="https://kit.fontawesome.com/c0ecb9f799.js" crossorigin="anonymous"></script>
-      
-       
-        <link rel="stylesheet" href="~/css/Konrad/styleMain.css">
-        <link rel="stylesheet" href="~/css/Konrad/styleContact.css">
-        <link rel="stylesheet" href="~/css/Konrad/styleMe.css">
+
         
+        <link rel="stylesheet" href="~/css/Konrad/stylik.css">
+
     </environment>
 </head>
 <body>
@@ -54,7 +51,7 @@
                     <li><a asp-area="" asp-controller="ImagesModels" asp-action="Index">Galeria</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Kontakt">Kontakt</a></li>
                     <li><span class="glyphicon glyphicon-envelope navbar-text" aria-hidden="true"></span></li>
-
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">Nasi klienci</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
@@ -111,11 +108,32 @@
     </div>
 
     <environment include="Development">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="~/js/main.js"></script>
+
+
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="~/js/main.js"></script>
+
+
+
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
                 asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
                 asp-fallback-test="window.jQuery"

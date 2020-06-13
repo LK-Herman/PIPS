@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewData["Title"] = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container wrapper contact row">
+        <div class="">
+            <div class="col-sm-4 contact">
+                <img src="~/images/facebook.png" class="img-responsive img-rounded" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Śledz nasz fanpage.</h5>
+                    <p class="card-text">Zmiany w firmie, nowości w naszej flocie. To wszystko znajdziesz tutaj.</p>
+                    <a href="https://www.facebook.com/" class="btn btn-primary">Sprawdź!</a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img src="~/images/tweet.png" class="img-responsive img-rounded" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nasz mały blog.</h5>
+                    <p class="card-text">
+                        Codziennie możesz liczyć na relację i obserwować jak daleko podstawiamy
+                        samochody.
+                    </p>
+                    <a href="https://twitter.com" class="btn btn-primary">Wejdź!</a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img src="~/images/linked.png" class="img-responsive img-rounded" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Linked? Nie ma sprawy.</h5>
+                    <p class="card-text">Możesz również liczyć na kontakt zawodowo biznesowy na tej witrynie.</p>
+                    <a href="https://www.linkedin.com/" class="btn btn-primary">Przejdź</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class=" col-sm-12">
+    <div class="check contact text-center">
+        
+        
+        <button onclick="getUsers()" class="check__button contact">Nasi klienci</button>
+    </div>
+
+    <div class="user-list contact"></div>
+</div>

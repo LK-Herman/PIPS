@@ -68,10 +68,10 @@
             var newDate = item.RokProd.Year.ToString();
         <tr class="row col-sm-12" style="vertical-align: middle; text-align: left">
 
-            <td class="col-sm-5 img-responsive" style="vertical-align: middle">
+            <td class="col-sm-5 img-responsive" style="vertical-align: middle; text-align:center">
                 <a asp-action="Details" asp-route-id="@item.Id">
 
-                    <img class="img-rounded img-responsive" src="@("~/images/carimg/"+ item.CarImage.ImageName)" asp-append-version="true" />
+                    <img class="img-rounded img-responsive" src="@("~/images/carimg/"+ item.CarImage.ImageName)" asp-append-version="true" style="max-height:200px"/>
                     @*width="350" height="250"*@
                 </a>
             </td>

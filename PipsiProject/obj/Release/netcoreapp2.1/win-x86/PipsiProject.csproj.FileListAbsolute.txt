@@ -1,5 +1,3 @@
-C:\Projects\PipsiProject\PipsiProject\bin\Release\netcoreapp2.1\win-x86\hostpolicy.dll
-C:\Projects\PipsiProject\PipsiProject\bin\Release\netcoreapp2.1\win-x86\hostfxr.dll
 C:\Projects\PipsiProject\PipsiProject\bin\Release\netcoreapp2.1\win-x86\PipsiProject.exe
 C:\Projects\PipsiProject\PipsiProject\bin\Release\netcoreapp2.1\win-x86\PipsiProject.deps.json
 C:\Projects\PipsiProject\PipsiProject\bin\Release\netcoreapp2.1\win-x86\PipsiProject.runtimeconfig.json
@@ -17,7 +15,6 @@ C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\PipsiPro
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\PipsiProject.TagHelpers.input.cache
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\PipsiProject.TagHelpers.output.cache
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\PipsiProject.RazorCoreGenerate.cache
-C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\Razor\Views\CarModels\CarAndImageCreate.g.cshtml.cs
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\Razor\Views\CarModels\Create.g.cshtml.cs
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\Razor\Views\CarModels\Delete.g.cshtml.cs
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\Razor\Views\CarModels\Details.g.cshtml.cs
@@ -25,8 +22,6 @@ C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\Razor\Vi
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\Razor\Views\CarModels\Index.g.cshtml.cs
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\Razor\Views\Home\Index.g.cshtml.cs
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\Razor\Views\Home\Kontakt.g.cshtml.cs
-C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\Razor\Views\Home\Logowanie.g.cshtml.cs
-C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\Razor\Views\Home\Rejestracja.g.cshtml.cs
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\Razor\Views\Home\Samochody.g.cshtml.cs
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\Razor\Views\ImagesModels\Create.g.cshtml.cs
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\Razor\Views\ImagesModels\Delete.g.cshtml.cs
@@ -46,3 +41,9 @@ C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\PipsiPro
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\PipsiProject.dll
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\PipsiProject.pdb
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\PipsiProject.csproj.CopyComplete
+C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\Razor\Views\Account\LogBehind.g.cshtml.cs
+C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\Razor\Views\Account\Login.g.cshtml.cs
+C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\Razor\Views\Account\Register.g.cshtml.cs
+C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\win-x86\Razor\Views\Home\About.g.cshtml.cs
+C:\Projects\PipsiProject\PipsiProject\bin\Release\netcoreapp2.1\win-x86\hostpolicy.dll
+C:\Projects\PipsiProject\PipsiProject\bin\Release\netcoreapp2.1\win-x86\hostfxr.dll

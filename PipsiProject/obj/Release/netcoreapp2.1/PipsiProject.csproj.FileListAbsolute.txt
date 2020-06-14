@@ -21,8 +21,6 @@ C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\CarM
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\CarModels\Index.g.cshtml.cs
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\Home\Kontakt.g.cshtml.cs
-C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\Home\Logowanie.g.cshtml.cs
-C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\Home\Rejestracja.g.cshtml.cs
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\Home\Samochody.g.cshtml.cs
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
@@ -36,10 +34,13 @@ C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\PipsiProject.Vie
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\PipsiProject.dll
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\PipsiProject.pdb
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\PipsiProject.csproj.CopyComplete
-C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\CarModels\CarAndImageCreate.g.cshtml.cs
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\ImagesModels\Create.g.cshtml.cs
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\ImagesModels\Delete.g.cshtml.cs
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\ImagesModels\Details.g.cshtml.cs
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\ImagesModels\Edit.g.cshtml.cs
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\ImagesModels\Index.g.cshtml.cs
 C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\ImagesModels\ViewChoice.g.cshtml.cs
+C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\Account\LogBehind.g.cshtml.cs
+C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\Account\Login.g.cshtml.cs
+C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\Account\Register.g.cshtml.cs
+C:\Projects\PipsiProject\PipsiProject\obj\Release\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs

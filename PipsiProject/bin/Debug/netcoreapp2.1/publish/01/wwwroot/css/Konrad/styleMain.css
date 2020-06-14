@@ -1,0 +1,62 @@
+main {
+    max-width: 1440px;
+    margin: 5vh auto;
+    font-size: 0;
+
+}
+
+main p.description {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 0 30px 20px;
+    line-height: 180%;
+}
+
+p.description span {
+    font-weight: bold;
+}
+
+main section.features {
+     
+    padding-bottom: 30px;
+}
+
+main div.feature {
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+}
+
+main div.image {
+    height: 200px;
+    /*background-position: bottom;*/
+    background-repeat: no-repeat;
+    background-size: cover ;
+    margin: 10px 30px;
+    
+}
+
+main div.image.noLimit {
+    background-image: url(../images/NoLimits.jpg);
+    background-position: bottom;
+    margin: 10px 30px 10px 0px;
+}
+
+main div.image.promo {
+    background-image: url(../images/Promo.jpg);
+    background-position: center;
+}
+
+main div.image.formal {
+    background-image: url(../images/Formal.jpg);
+    margin: 10px 0px 10px 30px;
+    background-position: center;
+}
+
+
+main h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #222;
+
+}

@@ -18,7 +18,7 @@ namespace PipsiProject.Controllers
             return View();
         }
 
-                                    
+        [Route("About")]                            
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
@@ -26,6 +26,7 @@ namespace PipsiProject.Controllers
             return View();
         }
 
+        [Route("Kontakt")]
         public IActionResult Kontakt()
         {
             ViewData["Message"] = "Your contact page.";
